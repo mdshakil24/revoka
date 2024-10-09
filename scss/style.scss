@@ -77,7 +77,7 @@ body {
     margin-bottom: 0;
   }
 
-  h3 {
+  h3, {
     font-size: 34px;
     background: $primary-linear-bg;
     -webkit-background-clip: text;
@@ -95,17 +95,7 @@ body {
     color: $secondary-color;
   }
 
-  .Michelin {
-    font-size: 18px;
-    font-family: "Gotham";
-    color: rgb(204, 204, 204);
-    line-height: 1;
-    text-align: left;
-    position: absolute;
-    left: 1087.937px;
-    top: 1259.89px;
-    z-index: 427;
-  }
+
 
 }
 
@@ -122,6 +112,127 @@ body {
   }
 }
 
-
-
 // End RV Besten Angebote Area
+
+// Start RV Sonderangebot Area
+.rv-sonderangebot-area {
+  background-color: #f5f5f5;
+  padding: 130px 0;
+}
+.rv-sonderangebot-left-slide-image {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.rv-sonderangebot-left-slide-top-img {
+  position: absolute;
+  width: 100%;
+  top: -40px;
+  img {
+    width: 32%;
+  }
+  h2 {
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-left: 50px;
+  }
+} 
+
+.rv-sonderangebot-right-slide {
+  margin-left: 20px;
+  h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: $secondary-color;
+    line-height: 1.1;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 20px;
+    width: 95%;
+  }
+}
+.rv-sonderangebot-right-slide-price {
+  h3 {
+    font-size: 34px;
+    background: $primary-linear-bg;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  span {
+    position: relative;
+    font-size: 20px;
+    color: $secondary-color;
+    line-height: 1.25;
+    margin-left: 10px;
+   
+  }
+}
+.rv-sonderangebot-right-slide-price span::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(38, 38, 38);
+  width: 115%;
+  height: 1px;
+  left: -5px;
+  top: 13px;
+  transform: rotate(-6deg);
+}
+
+
+.rv-sonderangebot-single-progress {
+  margin-left: 30px;
+}
+
+.rv-sonderangebot-single-progress-text {
+  position: relative;
+}
+
+.rv-sonderangebot-single-progress-text span {
+  position: absolute;
+  font-weight: 500;
+  font-size: 26px;
+  color: $secondary-color;
+  left: 0;
+  top: 14px;
+  right: 0;
+  margin: auto;
+}
+.rv-sonderangebot-right-slide-progress {
+  margin-right: 35px;
+}
+
+.circular-progress {
+  --size: 190px;
+  --half-size: calc(var(--size) / 2);
+  --stroke-width: 15px;
+  --radius: calc((var(--size) - var(--stroke-width)) / 2);
+  --circumference: calc(var(--radius) * pi * 2);
+  --dash: calc((var(--progress) * var(--circumference)) / 100);
+}
+
+.circular-progress circle {
+  cx: var(--half-size);
+  cy: var(--half-size);
+  r: var(--radius);
+  stroke-width: var(--stroke-width);
+  fill: none;
+}
+
+.circular-progress circle.bg {
+  stroke: #d8d8d8;
+}
+
+.circular-progress circle.fg {
+  transform: rotate(-90deg);
+  transform-origin: var(--half-size) var(--half-size);
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  transition: stroke-dasharray 0.3s linear 0s;
+  stroke: #0c46c2;
+}
+
+// End RV Sonderangebot Area

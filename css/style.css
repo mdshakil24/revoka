@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamBook.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/GothamBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/FontAwesome.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Gotham", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rv-header-area {
+  position: relative;
+  padding: 15px 0;
+}
+.rv-header-area ::after {
+  content: "";
+  position: absolute;
+  background: url("../../images/images/top-bar.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 69%;
+  height: 45px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.rv-nav-content {
+  margin-top: -15px;
+}
+
+.rv-logo img {
+  width: 231px;
+  height: auto;
+}
+
+.rv-nav-content a, .rv-nav-content input, .rv-nav-content input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  margin-left: 25px;
+  line-height: 1;
+}
+.rv-nav-content input {
+  outline: none;
+  background: #FFFFFF;
+  padding: 8px 15px;
+  width: 100%;
+  border: none;
+  margin-top: -3px;
+}
+
+.rv-top-search {
+  position: relative;
+  width: 240px;
+}
+
+.rv-top-search::after {
+  display: none;
+}
+
+.rv-top-search img {
+  position: absolute;
+  right: -18px;
+  top: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+nav.rv-nav {
+  margin-top: 50px;
+}
+
+img.chevron-down {
+  width: 16px;
+}
+
+img.heart {
+  width: 22px;
+  margin-left: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

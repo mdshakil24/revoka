@@ -1,0 +1,15 @@
+@import "variable/variables";
+@import "fonts";
+body {
+  font-family: $font-gotham, sans-serif;
+}
+@import "layouts/header";
+@import "layouts/footer";
+@import "responsive";
+
+
+
+// Start Hero Banner Area 
+
+
+// End Hero Banner Area 

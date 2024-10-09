@@ -1,8 +1,11 @@
 @import "variable/variables";
 @import "fonts";
+
 body {
   font-family: $font-gotham, sans-serif;
 }
+
+@import "global";
 @import "layouts/header";
 @import "layouts/footer";
 @import "responsive";
@@ -10,6 +13,115 @@ body {
 
 
 // Start Hero Banner Area 
+.rv-hero-banner-area {
+  background: url('../images/images/banner.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 195px;
+  padding-bottom: 260px;
+  // height: 100vh;
 
+  p {
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.66;
+    margin: 15px 0 25px;
+  }
+
+}
 
 // End Hero Banner Area 
+
+
+// Start RV Besten Angebote Area
+.rv-besten-angebote-area {
+  background-color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 130px;
+  overflow: hidden;
+}
+
+.rv-besten-angebote-right-slider {
+  margin-right: -120px;
+  margin-left: 30px;
+}
+
+.rv-besten-angebote-slide {
+  border: 1px solid #e9e9e9;
+  border-radius: 15px;
+  padding: 35px 20px;
+
+  .rv-besten-angebote-slide-image {
+    text-align: center;
+  }
+
+  img {
+    height: 180px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .rv-besten-angebote-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  p,
+  a {
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 34px;
+    background: $primary-linear-bg;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font: {
+      weight: 500;
+      size: 23px
+    }
+
+    color: $secondary-color;
+  }
+
+  .Michelin {
+    font-size: 18px;
+    font-family: "Gotham";
+    color: rgb(204, 204, 204);
+    line-height: 1;
+    text-align: left;
+    position: absolute;
+    left: 1087.937px;
+    top: 1259.89px;
+    z-index: 427;
+  }
+
+}
+
+.rv-besten-angebote-slide.active {
+  background: $secondary-color;
+
+  p,
+  a {
+    color: rgb(204, 204, 204);
+  }
+
+  h4 {
+    color: #FFFFFF;
+  }
+}
+
+
+
+// End RV Besten Angebote Area

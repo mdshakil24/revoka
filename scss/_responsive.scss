@@ -16,4 +16,25 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
+
+}
+
+// Large monitor
+@media (min-width: 1925px) {
+    .rv-hero-banner-area {
+        height: 100vh;
+    }
+    .rv-header-area ::after {
+        width: 66%;
+    }
+}
+@media (min-width: 2700px) {
+    .rv-header-area ::after {
+        width: 63%;
+    }
+}
+@media (min-width: 3300px) {
+    .rv-header-area ::after {
+        width: 60%;
+    }
 }

@@ -45,6 +45,101 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  text-transform: inherit;
+  line-height: 1.6;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 78px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.026;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 45px;
+  color: rgb(38, 38, 38);
+  text-transform: capitalize;
+  line-height: 1.1;
+}
+
+.rv-btn {
+  position: relative;
+  font-weight: 400;
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  text-transform: inherit;
+  line-height: 1.2;
+  background: linear-gradient(to right, rgb(1, 29, 176) 0%, rgb(34, 152, 229) 98%);
+  padding: 15px 30px;
+  display: inline-block;
+  z-index: 1;
+}
+
+.rv-btn::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgb(17, 89, 202);
+  right: -6px;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.rv-btn:hover {
+  color: rgb(255, 255, 255);
+}
+
+.rv-btn img {
+  margin-left: 5px;
+}
+
+.primary-heading h2 {
+  margin-bottom: 10px;
+}
+.primary-heading .img-icon img {
+  width: 25px;
+}
+.primary-heading .img-icon {
+  position: relative;
+}
+.primary-heading .img-icon ::before {
+  content: "";
+}
+.primary-heading .img-icon ::after {
+  content: "";
+}
+
+.secondary-heading h2 {
+  margin-bottom: 10px;
+}
+.secondary-heading .img-icon img {
+  width: 20px;
+}
+
+.img-icon {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.img-icon::after {
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 80px;
+  height: 1px;
+  left: 35px;
+  top: 15px;
+}
+
 .rv-header-area {
   position: relative;
   padding: 15px 0;
@@ -71,7 +166,9 @@ a {
   height: auto;
 }
 
-.rv-nav-content a, .rv-nav-content input, .rv-nav-content input::placeholder {
+.rv-nav-content a,
+.rv-nav-content input,
+.rv-nav-content input::placeholder {
   font-weight: 400;
   font-size: 18px;
   color: rgb(0, 0, 0);
@@ -116,6 +213,113 @@ img.chevron-down {
 img.heart {
   width: 22px;
   margin-left: 25px;
+}
+
+@media (min-width: 1925px) {
+  .rv-hero-banner-area {
+    height: 100vh;
+  }
+  .rv-header-area ::after {
+    width: 66%;
+  }
+}
+@media (min-width: 2700px) {
+  .rv-header-area ::after {
+    width: 63%;
+  }
+}
+@media (min-width: 3300px) {
+  .rv-header-area ::after {
+    width: 60%;
+  }
+}
+.rv-hero-banner-area {
+  background: url("../images/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 195px;
+  padding-bottom: 260px;
+}
+.rv-hero-banner-area p {
+  font-weight: 400;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.66;
+  margin: 15px 0 25px;
+}
+
+.rv-besten-angebote-area {
+  background-color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 130px;
+  overflow: hidden;
+}
+
+.rv-besten-angebote-right-slider {
+  margin-right: -120px;
+  margin-left: 30px;
+}
+
+.rv-besten-angebote-slide {
+  border: 1px solid #e9e9e9;
+  border-radius: 15px;
+  padding: 35px 20px;
+}
+.rv-besten-angebote-slide .rv-besten-angebote-slide-image {
+  text-align: center;
+}
+.rv-besten-angebote-slide img {
+  height: 180px;
+  width: auto;
+  margin-bottom: 30px;
+}
+.rv-besten-angebote-slide .rv-besten-angebote-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.rv-besten-angebote-slide p,
+.rv-besten-angebote-slide a {
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+  line-height: 1;
+  margin-bottom: 0;
+}
+.rv-besten-angebote-slide h3 {
+  font-size: 34px;
+  background: linear-gradient(to right, rgb(1, 29, 176) 0%, rgb(34, 152, 229) 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.rv-besten-angebote-slide h4 {
+  font-weight: 500;
+  font-size: 23px;
+  color: rgb(38, 38, 38);
+}
+.rv-besten-angebote-slide .Michelin {
+  font-size: 18px;
+  font-family: "Gotham";
+  color: rgb(204, 204, 204);
+  line-height: 1;
+  text-align: left;
+  position: absolute;
+  left: 1087.937px;
+  top: 1259.89px;
+  z-index: 427;
+}
+
+.rv-besten-angebote-slide.active {
+  background: rgb(38, 38, 38);
+}
+.rv-besten-angebote-slide.active p,
+.rv-besten-angebote-slide.active a {
+  color: rgb(204, 204, 204);
+}
+.rv-besten-angebote-slide.active h4 {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

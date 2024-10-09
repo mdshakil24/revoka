@@ -1,14 +1,7 @@
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 .rv-header-area {
     position: relative;
     padding: 15px 0;
+
     ::after {
         content: '';
         position: absolute;
@@ -33,16 +26,21 @@ a {
 }
 
 .rv-nav-content {
-    a,input, input::placeholder {
+
+    a,
+    input,
+    input::placeholder {
         font: {
             weight: 400;
             size: 18px;
         }
+
         color: rgb(0, 0, 0);
         text-transform: capitalize;
         margin-left: 25px;
         line-height: 1;
     }
+
     input {
         outline: none;
         background: #FFFFFF;
@@ -52,13 +50,16 @@ a {
         margin-top: -3px;
     }
 }
+
 .rv-top-search {
     position: relative;
     width: 240px;
 }
+
 .rv-top-search::after {
     display: none;
 }
+
 .rv-top-search img {
     position: absolute;
     right: -18px;
@@ -79,4 +80,3 @@ img.heart {
     width: 22px;
     margin-left: 25px;
 }
-

@@ -1,5 +1,7 @@
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -66,19 +68,29 @@ h4 {
     line-height: 1.2;
     background: $primary-linear-bg;
     padding: 15px 30px;
-    display: inline;
+    display: inline-flex;
+    align-items: center;
     z-index: 1;
+    margin-bottom: 8px;
 }
 
 .rv-btn::after {
     content: "";
     position: absolute;
-    border: 1px solid rgb(17, 89, 202);
+    background: url('../images/icons/border.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     right: -6px;
     top: 6px;
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+a.rv-btn img {
+    width: 18px !important;
+    height: auto !important;
+    margin-left: 12px;
 }
 
 .rv-btn:hover {
@@ -147,4 +159,84 @@ h4 {
         width: 20px;
     }
 
+}
+
+
+// Slider button desgin
+.owl-nav button {
+    width: 40px;
+    height: 40px;
+    background-color: $white-color !important;
+    border: 1px solid #011db0 !important;
+    border-radius: 50% !important;
+    transition: .3s;
+}
+.owl-nav button:hover  {
+    background-color: #1056c8 !important;
+}
+.owl-nav button span {
+    font-size: 30px;
+    line-height: 22px;
+    color: #011db0;
+}
+.owl-nav button:hover span {
+    color: #FFFFFF;
+}
+.owl-carousel.besten-angebote-slider .owl-nav button, .owl-carousel.sonderangebot-slider .owl-nav button,.owl-carousel.rv-marken-slider .owl-nav button {
+    position: absolute;
+}
+
+// besten angebote slider
+.owl-carousel.besten-angebote-slider .owl-stage-outer {
+    padding: 0;
+}
+.owl-carousel.besten-angebote-slider .owl-nav button.owl-next {
+    bottom: 155px;
+    left: -18px;
+}
+.owl-carousel.besten-angebote-slider .owl-nav button.owl-prev {
+    top: 155px;
+    left: -18px;
+}
+
+// sonderangebot slider
+.owl-carousel.sonderangebot-slider .owl-nav button.owl-next {
+    top: 50%;
+    transform: translateY(-5%);
+    right: -80px;
+}
+.owl-carousel.sonderangebot-slider .owl-nav button.owl-prev {
+    top: 50%;
+    transform: translateY(-5%);
+    left: -80px;
+}
+
+// rv marken slider 
+.owl-carousel.rv-marken-slider .owl-nav button.owl-next {
+    top: 0;
+    right: -80px;
+}
+.owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
+    top: 0;
+    left: -80px;
+}
+ 
+// nolan slider
+.owl-theme.nolan-slider .owl-nav.disabled+.owl-dots {
+    margin-top: 15px;
+    text-align: left;
+}
+.owl-theme.nolan-slider .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 5px 4px;
+    background: transparent !important;
+    border: 1px solid #FFFFFF;
+}
+.owl-theme.nolan-slider .owl-dots .owl-dot.active span {
+    width: 8px;
+    height: 8px;
+    margin: 5px 4px;
+    background: #FFFFFF !important;
+    border: 1px solid #FFFFFF;
 }

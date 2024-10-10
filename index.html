@@ -1,486 +1,910 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="icon" href="images/icons/rvicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="icon" href="images/icons/rvicon.png">
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <body>
+        <!-- Start RV Header Area  -->
+        <header class="rv-header-area">
+            <div class="container">
+                <div class="rv-header-content d-flex justify-content-between">
+                    <div class="rv-logo">
+                        <a href="#"><img src="images/logo/logo.png" alt="Logo" /></a>
+                    </div>
+                    <div class="rv-nav-content">
+                        <!-- start rv top bar  -->
+                        <div class="d-flex justify-content-end mt-2">
+                            <div class="rv-top-bar-left">
+                                <a href="#">Über Revoka</a>
+                                <a href="#">Auto-Ratgeber</a>
+                                <a href="#">Motorrad Ratgeber</a>
+                                <a href="#">Presse</a>
+                            </div>
 
-<body>
-  <!-- Start RV Header Area  -->
-  <header class="rv-header-area ">
-    <div class="container">
-      <div class="rv-header-content d-flex justify-content-between">
-        <div class="rv-logo">
-          <a href="#"><img src="images/logo/logo.png" alt="Logo" /></a>
-        </div>
-        <div class="rv-nav-content">
-          <!-- start rv top bar  -->
-          <div class="d-flex justify-content-end mt-2">
-            <div class="rv-top-bar-left">
-              <a href="#">Über Revoka</a>
-              <a href="#">Auto-Ratgeber</a>
-              <a href="#">Motorrad Ratgeber</a>
-              <a href="#">Presse</a>
-            </div>
+                            <div class="rv-top-bar-right d-flex align-items-center">
+                                <div class="rv-top-search">
+                                    <input type="search" placeholder="Suche..." />
+                                    <img src="images/icons/search.png" alt="searchIcon" />
+                                </div>
+                                <a class="d-flex align-items-center" href="#"><img class="heart" src="images/icons/heart.png" alt="heartIcon" /> Merkliste </a>
+                            </div>
+                        </div>
+                        <!-- end rv top bar  -->
 
-            <div class="rv-top-bar-right d-flex align-items-center">
-              <div class="rv-top-search">
-                <input type="search" placeholder="Suche...">
-                <img src="images/icons/search.png" alt="searchIcon">
-              </div>
-              <a class="d-flex align-items-center" href="#"><img class="heart" src="images/icons/heart.png"
-                  alt="heartIcon"> Merkliste </a>
-            </div>
+                        <!-- start rv main nav  -->
+                        <nav class="rv-nav">
+                            <ul class="d-flex align-items-center">
+                                <li><a href="#">Startseite</a></li>
+                                <li>
+                                    <a href="#">Autoreifen <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown" /></a>
 
-          </div>
-          <!-- end rv top bar  -->
+                                    <ul>
+                                        <li><a href="#">Autoreifen one</a></li>
+                                        <li><a href="#">Autoreifen two</a></li>
+                                        <li><a href="#">Autoreifen three</a></li>
+                                    </ul>
+                                </li>
 
-          <!-- start rv main nav  -->
-          <nav class="rv-nav">
-            <ul class="d-flex align-items-center">
-              <li><a href="#">Startseite</a></li>
-              <li><a href="#">Autoreifen <img class="chevron-down" src="images/icons/chevron-down.svg"
-                    alt="chevronDown"></a></li>
-              <li><a href="#">Motorradreifen</a></li>
-              <li><a href="#">Motorradbekleidung <img class="chevron-down" src="images/icons/chevron-down.svg"
-                    alt="chevronDown"></a></li>
-              <li><a href="#">Ratgeber <img class="chevron-down" src="images/icons/chevron-down.svg"
-                    alt="chevronDown"></a></li>
-              <li><a href="#">Lexikon <img class="chevron-down" src="images/icons/chevron-down.svg"
-                    alt="chevronDown"></a></li>
-              <li><a href="#">Marken <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown">
-              </li></a>
-            </ul>
-          </nav>
-          <!-- end rv main nav  -->
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- End RV Header Area  -->
+                                <li><a href="#">Motorradreifen</a></li>
 
-  <main>
+                                <li>
+                                    <a href="#">Motorradbekleidung <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown" /></a>
 
-    <!-- Start RV Hero Banner Area  -->
-    <section class="rv-hero-banner-area">
-      <div class="container">
-        <div class="offset-xxl-6 col-xxl-6">
-          <h1>REVOKA</h1>
-          <p>IHR VERGLEICHSPORTAL FÜR REIFEN, MOTORRADBEKLEIDUNG UND VIELES MEHR.</p>
-          <a class="rv-btn" href="#">Kontaktiere uns heute <img src="images/icons/ar.png" alt="Image"></a>
-        </div>
-      </div>
-    </section>
-    <!-- End RV Hero Banner Area  -->
+                                    <ul>
+                                        <li><a href="#">Motorradbekleidung one</a></li>
+                                        <li><a href="#">Motorradbekleidung two</a></li>
+                                        <li><a href="#">Motorradbekleidung three</a></li>
+                                    </ul>
+                                </li>
 
-    <!-- Start RV Besten Angebote Area -->
-    <section class="rv-besten-angebote-area">
-      <div class="container">
-        <div class="row align-items-center">
+                                <li>
+                                    <a href="#">Ratgeber <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown" /></a>
 
-          <div class="col-xl-4">
-            <div class="rv-besten-angebote-left">
+                                    <ul>
+                                        <li><a href="#">Ratgeber one</a></li>
+                                        <li><a href="#">Ratgeber two</a></li>
+                                        <li><a href="#">Ratgeber three</a></li>
+                                    </ul>
+                                </li>
 
-              <div class="secondary-similar-content">
-                <div class="secondary-heading">
-                  <h2>Neuesten Und
-                    Besten Angebote</h2>
-                  <div class="img-icon">
-                    <img src="images/icons/rvicon.png" alt="Icon">
-                  </div>
+                                <li>
+                                    <a href="#">Lexikon <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown" /></a>
+
+                                    <ul>
+                                        <li><a href="#">Lexikon one</a></li>
+                                        <li><a href="#">Lexikon two</a></li>
+                                        <li><a href="#">Lexikon three</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Marken <img class="chevron-down" src="images/icons/chevron-down.svg" alt="chevronDown" /> </a>
+                                    <ul>
+                                        <li><a href="#">Marken one</a></li>
+                                        <li><a href="#">Marken two</a></li>
+                                        <li><a href="#">Marken three</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end rv main nav  -->
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipis
-                  cing elit sed diam nonummy nibh.</p>
-                <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image"></a>
-              </div>
-
             </div>
-          </div>
+        </header>
+        <!-- End RV Header Area  -->
 
-          <div class="col-xl-8">
-            <div class="rv-besten-angebote-right-slider">
-              <div class="row">
-
-                <!-- single item  -->
-                <div class="col-xl-4">
-                  <div class="rv-besten-angebote-slide">
-                    <div class="rv-besten-angebote-slide-image">
-                      <img src="images/images/sp1.png" alt="productImage">
+        <main>
+            <!-- Start RV Hero Banner Area  -->
+            <section class="rv-hero-banner-area">
+                <div class="container">
+                    <div class="offset-xxl-6 col-xxl-6">
+                        <h1>REVOKA</h1>
+                        <p>IHR VERGLEICHSPORTAL FÜR REIFEN, MOTORRADBEKLEIDUNG UND VIELES MEHR.</p>
+                        <a class="rv-btn" href="#">Kontaktiere uns heute <img src="images/icons/ar.png" alt="Image" /></a>
                     </div>
-                    <p>Sena</p>
-                    <h4>Powerpro-01</h4>
-                    <div class="rv-besten-angebote-price">
-                      <h3>€75,13</h3>
-                      <a href="#">Mehr <br>
-                        wissen >></a>
-                    </div>
-                  </div>
                 </div>
-                <!-- single item  -->
+            </section>
+            <!-- End RV Hero Banner Area  -->
 
-                <!-- single item  -->
-                <div class="col-xl-4">
-                  <div class="rv-besten-angebote-slide active">
-                    <div class="rv-besten-angebote-slide-image">
-                      <img src="images/images/sp2.png" alt="productImage">
+            <!-- Start RV Besten Angebote Area -->
+            <section class="rv-besten-angebote-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4">
+                            <div class="rv-besten-angebote-left">
+                                <div class="secondary-similar-content">
+                                    <div class="secondary-heading">
+                                        <h2>Neuesten Und Besten Angebote</h2>
+                                        <div class="img-icon">
+                                            <img src="images/icons/rvicon.png" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipis cing elit sed diam nonummy nibh.</p>
+                                    <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image" /></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8">
+                            <div class="rv-besten-angebote-right-slider">
+                                <div class="row owl-carousel besten-angebote-slider">
+                                    <!-- single item  -->
+
+                                    <div class="rv-besten-angebote-slide">
+                                        <div class="rv-besten-angebote-slide-image">
+                                            <img src="images/images/sp1.png" alt="productImage" />
+                                        </div>
+                                        <p>Sena</p>
+                                        <h4>Powerpro-01</h4>
+                                        <div class="rv-besten-angebote-price">
+                                            <h3>€75,13</h3>
+                                            <a href="#">
+                                                Mehr <br />
+                                                wissen >>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- single item  -->
+
+                                    <!-- single item  -->
+
+                                    <div class="rv-besten-angebote-slide active">
+                                        <div class="rv-besten-angebote-slide-image">
+                                            <img src="images/images/sp2.png" alt="productImage" />
+                                        </div>
+                                        <p>Michelin</p>
+                                        <h4>Primacy 4</h4>
+                                        <div class="rv-besten-angebote-price">
+                                            <h3>€43.31</h3>
+                                            <a href="#">
+                                                Mehr <br />
+                                                wissen >>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- single item  -->
+
+                                    <!-- single item  -->
+
+                                    <div class="rv-besten-angebote-slide">
+                                        <div class="rv-besten-angebote-slide-image">
+                                            <img src="images/images/sp3.png" alt="productImage" />
+                                        </div>
+                                        <p>Alpinestars</p>
+                                        <h4>SMX 6 Stiefel</h4>
+                                        <div class="rv-besten-angebote-price">
+                                            <h3>111,61</h3>
+                                            <a href="#">
+                                                Mehr <br />
+                                                wissen >>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- single item  -->
+
+                                    <!-- single item  -->
+
+                                    <div class="rv-besten-angebote-slide">
+                                        <div class="rv-besten-angebote-slide-image">
+                                            <img src="images/images/sp3.png" alt="productImage" />
+                                        </div>
+                                        <p>Alpinestars</p>
+                                        <h4>SMX 6 Stiefel</h4>
+                                        <div class="rv-besten-angebote-price">
+                                            <h3>111,61</h3>
+                                            <a href="#">
+                                                Mehr <br />
+                                                wissen >>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- single item  -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>Michelin</p>
-                    <h4>Primacy 4</h4>
-                    <div class="rv-besten-angebote-price">
-                      <h3>€43.31</h3>
-                      <a href="#">Mehr <br>
-                        wissen >></a>
-                    </div>
-                  </div>
                 </div>
-                <!-- single item  -->
+            </section>
+            <!-- End RV Besten Angebote Area -->
 
-                <!-- single item  -->
-                <div class="col-xl-4">
-                  <div class="rv-besten-angebote-slide">
-                    <div class="rv-besten-angebote-slide-image">
-                      <img src="images/images/sp3.png" alt="productImage">
+            <!-- Start RV Sonderangebot Area -->
+            <section class="rv-sonderangebot-area">
+                <div class="container">
+                    <div class="owl-carousel sonderangebot-slider">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="rv-sonderangebot-left-slide">
+                                    <div class="rv-sonderangebot-left-slide-image">
+                                        <div class="rv-sonderangebot-left-slide-top-img d-flex justify-content-center align-items-center">
+                                            <img src="images/images/dainese-avro.png" alt="dainese" />
+                                            <h2>
+                                                Dainese <br />
+                                                Avro D1
+                                            </h2>
+                                        </div>
+                                        <img src="images/images/dainese.png" alt="dainese" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="rv-sonderangebot-right-slide">
+                                    <div class="secondary-similar-content">
+                                        <div class="secondary-heading">
+                                            <h2>Wöchentliches Sonderangebot</h2>
+                                            <div class="img-icon">
+                                                <img src="images/icons/rvicon.png" alt="Icon" />
+                                            </div>
+                                        </div>
+
+                                        <h4>Dainese Avro D1</h4>
+                                        <p>
+                                            eine Motorradlederjacke für das ganze Jahr <br />
+                                            Höchste Sicherheitsstandards sind gerade gut genug für deine Motorradjacke aus Leder, wenn du das ganze Jahr über sicher Motorrad fahren möchtest.
+                                        </p>
+
+                                        <div class="rv-sonderangebot-right-slide-bottom d-flex justify-content-between align-items-start">
+                                            <div class="rv-sonderangebot-right-slide-price">
+                                                <div class="d-flex align-items-end right-slide-price">
+                                                    <h3>€143.00</h3>
+                                                    <span>€158.00</span>
+                                                </div>
+
+                                                <a class="rv-btn" href="#">Jetzt einkaufen <img src="images/icons/ar.png" alt="Image" /></a>
+                                            </div>
+                                            <div class="rv-sonderangebot-right-slide-progress d-flex">
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 15;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>15</span>
+                                                    </div>
+                                                    <p>Std</p>
+                                                </div>
+                                                <!-- single progress  -->
+
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 50;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>50</span>
+                                                    </div>
+                                                    <p>Protokoll</p>
+                                                </div>
+                                                <!-- single progress  -->
+
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 33;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>33</span>
+                                                    </div>
+                                                    <p>Sekunden</p>
+                                                </div>
+                                                <!-- single progress  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="rv-sonderangebot-left-slide">
+                                    <div class="rv-sonderangebot-left-slide-image">
+                                        <div class="rv-sonderangebot-left-slide-top-img d-flex justify-content-center align-items-center">
+                                            <img src="images/images/dainese-avro.png" alt="dainese" />
+                                            <h2>
+                                                Dainese <br />
+                                                Avro D1
+                                            </h2>
+                                        </div>
+                                        <img src="images/images/dainese.png" alt="dainese" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="rv-sonderangebot-right-slide">
+                                    <div class="secondary-similar-content">
+                                        <div class="secondary-heading">
+                                            <h2>Wöchentliches Sonderangebot</h2>
+                                            <div class="img-icon">
+                                                <img src="images/icons/rvicon.png" alt="Icon" />
+                                            </div>
+                                        </div>
+
+                                        <h4>Dainese Avro D1</h4>
+                                        <p>
+                                            eine Motorradlederjacke für das ganze Jahr <br />
+                                            Höchste Sicherheitsstandards sind gerade gut genug für deine Motorradjacke aus Leder, wenn du das ganze Jahr über sicher Motorrad fahren möchtest.
+                                        </p>
+
+                                        <div class="rv-sonderangebot-right-slide-bottom d-flex justify-content-between align-items-start">
+                                            <div class="rv-sonderangebot-right-slide-price">
+                                                <div class="d-flex align-items-end right-slide-price">
+                                                    <h3>€143.00</h3>
+                                                    <span>€158.00</span>
+                                                </div>
+
+                                                <a class="rv-btn" href="#">Jetzt einkaufen <img src="images/icons/ar.png" alt="Image" /></a>
+                                            </div>
+                                            <div class="rv-sonderangebot-right-slide-progress d-flex">
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 15;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>15</span>
+                                                    </div>
+                                                    <p>Std</p>
+                                                </div>
+                                                <!-- single progress  -->
+
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 50;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>50</span>
+                                                    </div>
+                                                    <p>Protokoll</p>
+                                                </div>
+                                                <!-- single progress  -->
+
+                                                <!-- single progress  -->
+                                                <div class="rv-sonderangebot-single-progress text-center">
+                                                    <div class="rv-sonderangebot-single-progress-text">
+                                                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress" style="--progress: 33;">
+                                                            <circle class="bg"></circle>
+                                                            <circle class="fg"></circle>
+                                                        </svg>
+                                                        <span>33</span>
+                                                    </div>
+                                                    <p>Sekunden</p>
+                                                </div>
+                                                <!-- single progress  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>Alpinestars</p>
-                    <h4>SMX 6 Stiefel</h4>
-                    <div class="rv-besten-angebote-price">
-                      <h3>111,61</h3>
-                      <a href="#">Mehr <br>
-                        wissen >></a>
-                    </div>
-                  </div>
                 </div>
-                <!-- single item  -->
+            </section>
+            <!-- End RV Sonderangebot Area -->
 
-              </div>
-            </div>
-          </div>
+            <!-- Start RV Nolan Area -->
+            <section class="rv-nolan-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="owl-carousel owl-theme nolan-slider">
+                                <div class="rv-nolan-left-content">
+                                    <div class="rv-nolan-left-heading-text">
+                                        <h5>70% RABATT</h5>
+                                        <h3>Nolan N-Com B902 R</h3>
+                                        <p>Fahrradteile und -zubehör - Bis zu 70 % Rabatt</p>
+                                    </div>
+                                    <p class="m-bottom">Lorem ipsum dolor sit amet, consectetuer adipis cing elit sed diam nonummy nibh.Lorem ipsum dolor sit amet, consectetuer adipis cing elit.</p>
+                                    <a class="rv-btn" href="#">Holen Sie sich das Angebot <img src="images/icons/ar.png" alt="Image" /></a>
+                                </div>
 
+                                <div class="rv-nolan-left-content">
+                                    <div class="rv-nolan-left-heading-text">
+                                        <h5>70% RABATT</h5>
+                                        <h3>Nolan N-Com B902 R</h3>
+                                        <p>Fahrradteile und -zubehör - Bis zu 70 % Rabatt</p>
+                                    </div>
+                                    <p class="m-bottom">Lorem ipsum dolor sit amet, consectetuer adipis cing elit sed diam nonummy nibh.Lorem ipsum dolor sit amet, consectetuer adipis cing elit.</p>
+                                    <a class="rv-btn" href="#">Holen Sie sich das Angebot <img src="images/icons/ar.png" alt="Image" /></a>
+                                </div>
 
+                                <div class="rv-nolan-left-content">
+                                    <div class="rv-nolan-left-heading-text">
+                                        <h5>70% RABATT</h5>
+                                        <h3>Nolan N-Com B902 R</h3>
+                                        <p>Fahrradteile und -zubehör - Bis zu 70 % Rabatt</p>
+                                    </div>
+                                    <p class="m-bottom">Lorem ipsum dolor sit amet, consectetuer adipis cing elit sed diam nonummy nibh.Lorem ipsum dolor sit amet, consectetuer adipis cing elit.</p>
+                                    <a class="rv-btn" href="#">Holen Sie sich das Angebot <img src="images/icons/ar.png" alt="Image" /></a>
+                                </div>
 
-        </div>
-      </div>
-    </section>
-    <!-- End RV Besten Angebote Area -->
+                                <div class="rv-nolan-left-content">
+                                    <div class="rv-nolan-left-heading-text">
+                                        <h5>70% RABATT</h5>
+                                        <h3>Nolan N-Com B902 R</h3>
+                                        <p>Fahrradteile und -zubehör - Bis zu 70 % Rabatt</p>
+                                    </div>
+                                    <p class="m-bottom">Lorem ipsum dolor sit amet, consectetuer adipis cing elit sed diam nonummy nibh.Lorem ipsum dolor sit amet, consectetuer adipis cing elit.</p>
+                                    <a class="rv-btn" href="#">Holen Sie sich das Angebot <img src="images/icons/ar.png" alt="Image" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Start RV Sonderangebot Area -->
-    <section class="rv-sonderangebot-area">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="rv-sonderangebot-left-slide">
-              <div class="rv-sonderangebot-left-slide-image">
-                <div class="rv-sonderangebot-left-slide-top-img d-flex justify-content-center align-items-center">
-                  <img src="images/images/dainese-avro.png" alt="dainese">
-                  <h2>Dainese <br>
-                    Avro D1</h2>
+                    <div class="rv-nolan-middle-image">
+                        <img src="images/images/b902.png" alt="Image" />
+                    </div>
                 </div>
-                <img src="images/images/dainese.png" alt="dainese">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="rv-sonderangebot-right-slide">
-              <div class="secondary-similar-content">
+            </section>
+            <!-- End RV Nolan Area -->
 
-                <div class="secondary-heading">
-                  <h2>Wöchentliches Sonderangebot</h2>
-                  <div class="img-icon">
-                    <img src="images/icons/rvicon.png" alt="Icon">
-                  </div>
+            <!-- Start RV Neuesten Nachrichten Area  -->
+            <section class="rv-neuesten-nachrichten-area">
+                <div class="container">
+                    <div class="primary-heading">
+                        <h2>Neuesten Nachrichten</h2>
+                        <div class="img-icon">
+                            <img src="images/icons/rvicon.png" alt="Icon" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np1.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>Die neuesten Handyhalterungen und was sie können</h4>
+                                    <p>Auch Handyhalterungen für Auto, Motorrad, Fahrrad und Co entwickeln sich stets weiter. Hier zeigen wir dir die neuesten Modelle.</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np2.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>Motorradtaschen - die Qual der Wahl</h4>
+                                    <p>Du benötigst mehr Stauraum bei kurzen Fahrten oder eine Motorradtasche die genug Platz für eine längere Tour bietet?</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np1.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>Zuladung Motorrad: Wie viel Gepäck ist erlaubt?</h4>
+                                    <p>Weißt du, wie viel Gepäck du auf deiner Maschine mitnehmen darfst? Oder wie es mit einem/r Beifahrer/in aussieht? Hierbei sollten einige...</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np1.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>Neues für die Stadt: BMW Elektro-Roller CE 02</h4>
+                                    <p>Mobilität der Zukunft soll Spaß machen und alltagstauglich sein. Das innovative Bike definiert sich explizit nicht als Motorrad. Doch was...</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np5.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>So bist du sicher auf Touren unterwegs</h4>
+                                    <p>Sicher liebst auch du es, zügig auf den Straßen zu fahren und ein Gefühl der Freiheit zu spüren. Hier erfährst du, auf was zu es zu achten gilt.</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item  -->
+                        <div class="col-lg-4">
+                            <div class="single-neuesten-nachrichten-content">
+                                <div class="single-neuesten-nachrichten-image-box">
+                                    <img src="images/images/np6.png" alt="Image" />
+                                </div>
+                                <div class="single-neuesten-nachrichten-text-box">
+                                    <h4>Großes Angebot an Motorradsicherheitstrainings</h4>
+                                    <p>Gegenüber dem Gefühl von Freiheit steht jedes Jahr die erschreckende Unfallstatistik von Motorradfahrern. Daher ist ein...</p>
+                                    <a href="#">Weiterlesen >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single item  -->
+                    </div>
+                    <div class="text-center">
+                        <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image" /></a>
+                    </div>
                 </div>
+            </section>
+            <!-- End RV Neuesten Nachrichten Area  -->
 
-                <h4>Dainese Avro D1</h4>
-                <p>eine Motorradlederjacke für das ganze Jahr <br> Höchste Sicherheitsstandards sind gerade gut genug
-                  für deine Motorradjacke aus Leder, wenn du das ganze Jahr über sicher Motorrad fahren möchtest. </p>
-
-                <div class="rv-sonderangebot-right-slide-bottom d-flex justify-content-between align-items-start">
-                  <div class="rv-sonderangebot-right-slide-price">
-                    <div class="d-flex align-items-end right-slide-price">
-                      <h3>€143.00</h3> <span>€158.00</span>
+            <!-- Start RV Beste Angebote Area  -->
+            <section class="rv-beste-angebote-area">
+                <div class="container">
+                    <div class="primary-heading">
+                        <h2>Beste Angebote</h2>
+                        <div class="img-icon">
+                            <img src="images/icons/rvicon.png" alt="Icon" />
+                        </div>
                     </div>
 
-                    <a class="rv-btn" href="#">Jetzt einkaufen <img src="images/icons/ar.png" alt="Image"></a>
-                  </div>
-                  <div class="rv-sonderangebot-right-slide-progress d-flex ">
+                    <div class="row">
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp1.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Interphone</span>
+                                    <p>INTERPHONE PRO SOUND MIKROFON</p>
+                                    <small>ab 21,80 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
 
-                    <!-- single progress  -->
-                    <div class="rv-sonderangebot-single-progress text-center">
-                      <div class="rv-sonderangebot-single-progress-text">
-                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress"
-                          style="--progress: 15">
-                          <circle class="bg"></circle>
-                          <circle class="fg"></circle>
-                        </svg>
-                        <span>15</span>
-                      </div>
-                      <p>Std</p>
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp2.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Cardo</span>
+                                    <p>CARDO FREECOM KLEBEPAD</p>
+                                    <small>ab 21,80 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp3.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Sena</span>
+                                    <p>RC1 BLUETOOTH FERNBEDIENUNG</p>
+                                    <small>ab 44,99 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp4.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Sena</span>
+                                    <p>RC4 BLUETOOTH FERNBEDIENUNG</p>
+                                    <small>ab 71,82 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp5.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Uclear</span>
+                                    <p>MOTION USB-C LADEKABEL</p>
+                                    <small>ab 9,95 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
+
+                        <!-- single item -->
+                        <div class="col-xl-4">
+                            <div class="single-beste-angebote-content d-flex align-items-center justify-content-between">
+                                <div class="single-beste-angebote-img">
+                                    <img src="images/images/bp6.png" alt="Image" />
+                                </div>
+                                <div class="single-beste-angebote-right-text">
+                                    <span>Hjc</span>
+                                    <p>RPHA 11 BOBA FETT STAR WARS</p>
+                                    <small>ab 297,83 € </small>
+                                </div>
+                                <img class="beste-heart" src="images/icons/heart2.png" alt="HeartImage" />
+                            </div>
+                        </div>
+                        <!-- single item  -->
                     </div>
-                    <!-- single progress  -->
 
-                    <!-- single progress  -->
-                    <div class="rv-sonderangebot-single-progress text-center">
-                      <div class="rv-sonderangebot-single-progress-text">
-                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress"
-                          style="--progress: 50">
-                          <circle class="bg"></circle>
-                          <circle class="fg"></circle>
-                        </svg>
-                        <span>50</span>
-                      </div>
-                      <p>Protokoll</p>
+                    <div class="text-center mt-4">
+                        <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image" /></a>
                     </div>
-                    <!-- single progress  -->
-
-                    <!-- single progress  -->
-                    <div class="rv-sonderangebot-single-progress text-center">
-                      <div class="rv-sonderangebot-single-progress-text">
-                        <svg width="70" height="70" viewBox="0 0 200 200" class="circular-progress"
-                          style="--progress: 33">
-                          <circle class="bg"></circle>
-                          <circle class="fg"></circle>
-                        </svg>
-                        <span>33</span>
-                      </div>
-                      <p>Sekunden</p>
-                    </div>
-                    <!-- single progress  -->
-
-
-
-                  </div>
                 </div>
+            </section>
+            <!-- End RV Beste Angebote Area  -->
 
-              </div>
+            <!-- Start RV Marken Area  -->
+
+            <section class="rv-marken-area">
+                <div class="container">
+                    <div class="primary-heading">
+                        <h2>Revoka Marken</h2>
+                        <div class="img-icon">
+                            <img src="images/icons/rvicon.png" alt="Icon" />
+                        </div>
+                    </div>
+
+                    <div class="rv-marken-slider d-flex align-items-center justify-content-betweenv owl-carousel owl-theme">
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken1.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken2.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken5.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken6.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken3.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken4.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken5.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+
+                        <!-- single slide item  -->
+                        <div class="single-rv-marken-slide">
+                            <img src="images/icons/marken6.png" alt="markenImage" />
+                        </div>
+                        <!-- single slide item  -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- End RV Marken Area  -->
+
+            <!-- Start RV Newsletter Area  -->
+            <section class="rv-newsletter-area">
+                <div class="container">
+                    <div class="rv-newsletter-content">
+                        <div class="primary-heading">
+                            <h2>Newsletter Abonnieren</h2>
+                            <div class="img-icon">
+                                <img src="images/icons/rvicon.png" alt="Icon" />
+                            </div>
+                        </div>
+
+                        <div class="rv-newsletter-form text-center">
+                            <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam.</p>
+                            <form action="">
+                                <div class="d-flex justify-content-center">
+                                    <div class="single-rv-newsletter-form">
+                                        <input type="text" placeholder="Dein Name*" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="single-rv-newsletter-form">
+                                        <input type="text" placeholder="Deine E-Mail*" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button type="submit" class="rv-btn border-0">Anmeldung <img src="images/icons/ar.png" alt="Image" /></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End RV Newsletter Area  -->
+        </main>
+
+        <!-- Start RV Footer Area  -->
+        <footer class="rv-footer-area">
+            <div class="container">
+                <div class="rv-footer-content">
+                    <div class="rv-footer-top-content">
+                        <div class="row">
+                            <!-- single items  -->
+                            <div class="col-lg-4">
+                                <div class="single-rv-footer-top-content">
+                                    <h6>Interessante Inhalte</h6>
+                                    <div class="d-flex">
+                                        <ul>
+                                            <li><a href="#">Autoreifen</a></li>
+                                            <li><a href="#">Sommerreifen</a></li>
+                                            <li><a href="#">Winterreifen</a></li>
+                                            <li><a href="#">Ganzjahresreifen</a></li>
+                                            <li><a href="#">Motorradbekleidung</a></li>
+                                        </ul>
+
+                                        <ul class="footer-right-item">
+                                            <li><a href="#">Motorradhelme</a></li>
+                                            <li><a href="#">Motorradkombis</a></li>
+                                            <li><a href="#">Motorradhandschuhe</a></li>
+                                            <li><a href="#">Motorradstiefel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single items  -->
+
+                            <!-- single items  -->
+                            <div class="col-lg-3">
+                                <div class="single-rv-footer-top-content">
+                                    <h6>Ratgeber & Lexikon</h6>
+                                    <div class="d-flex">
+                                        <ul>
+                                            <li><a href="#">Auto-Ratgeber</a></li>
+                                            <li><a href="#">Motorrad-Ratgeber</a></li>
+                                            <li><a href="#">Reifen-Lexikon</a></li>
+                                            <li><a href="#">Auto-Lexikon</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single items  -->
+
+                            <!-- single items  -->
+                            <div class="col-lg-2">
+                                <div class="single-rv-footer-top-content">
+                                    <h6>Beliebte Marken</h6>
+                                    <div class="d-flex">
+                                        <ul>
+                                            <li><a href="#">BMW</a></li>
+                                            <li><a href="#">Audi</a></li>
+                                            <li><a href="#">Continental</a></li>
+                                            <li><a href="#">Goodyear</a></li>
+                                            <li><a href="#">Alpinestars</a></li>
+                                            <li><a href="#">Dainese</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single items  -->
+
+                            <!-- single items  -->
+                            <div class="col-lg-3">
+                                <div class="single-rv-footer-top-content">
+                                    <h6>Rechtliches & Kontakt</h6>
+                                    <div class="d-flex">
+                                        <ul>
+                                            <li><a href="#">Impressum</a></li>
+                                            <li><a href="#">Datenschutz</a></li>
+                                            <li><a href="#">Presse</a></li>
+                                            <li><a href="#">Werbung schalten</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single items  -->
+                        </div>
+                    </div>
+
+                    <div class="rv-footer-bottom-content">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="rv-footer-logo">
+                                    <a href="#"><img src="images/logo/footer-logo.png" alt="footerLogo" /></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="rv-footer-middle-text">
+                                    <p>Revoka ist dein Vergleichs- und Informationsportal für Auto- und Motorradzubehör. Du findest hier die besten Angebote für Teile wie <a href="#">Autoreifen</a> oder <a href="#">Motorradhelme</a>.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="rv-footer-right-content d-flex">
+                                    <div class="rv-footer-right-image">
+                                        <img src="images/icons/newsletter.png" alt="icon" />
+                                    </div>
+                                    <div class="rv-footer-right-text">
+                                        <p>Mailen Sie uns</p>
+                                        <a href="mailto:">info@revoka.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End RV Sonderangebot Area -->
-
-    <!-- Start RV Nolan Area -->
-    <section class="rv-nolan-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="rv-nolan-left-content">
-              <div class="rv-nolan-left-heading-text">
-                <h5>70% RABATT</h5>
-                <h3>Nolan N-Com B902 R</h3>
-                <p>Fahrradteile und -zubehör - Bis zu 70 % Rabatt</p>
-              </div>
-              <p class="m-bottom">Lorem ipsum dolor sit amet, consectetuer adipis cing
-                elit sed diam nonummy nibh.Lorem ipsum dolor sit
-                amet, consectetuer adipis cing elit.</p>
-              <a class="rv-btn" href="#">Holen Sie sich das Angebot <img src="images/icons/ar.png" alt="Image"></a>
+            <div class="rv-copyright-text text-center">
+                <p>Urheberrechte © 2022 REVOKA. Alle Rechte vorbehalten.</p>
             </div>
-          </div>
-        </div>
-        <div class="rv-nolan-middle-image">
-          <img src="images/images/b902.png" alt="">
-        </div>
-      </div>
-    </section>
-    <!-- End RV Nolan Area -->
+        </footer>
+        <!-- End RV Footer Area  -->
 
-    <!-- Start RV Neuesten Nachrichten Area  -->
-    <section class="rv-neuesten-nachrichten-area">
-      <div class="container">
-        <div class="primary-heading">
-          <h2>Neuesten Nachrichten</h2>
-          <div class="img-icon">
-            <img src="images/icons/rvicon.png" alt="Icon">
-          </div>
-        </div>
-        <div class="row">
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-
-          <!-- single item  -->
-          <div class="col-lg-4">
-            <div class="single-neuesten-nachrichten-content">
-              <div class="single-neuesten-nachrichten-image-box">
-                <img src="images/images/np1.png" alt="Image">
-              </div>
-              <div class="single-neuesten-nachrichten-text-box">
-                <h4>Die neuesten Handyhalterungen
-                  und was sie können</h4>
-                <p>Auch Handyhalterungen für Auto,
-                  Motorrad, Fahrrad und Co entwickeln
-                  sich stets weiter. Hier zeigen wir dir
-                  die neuesten Modelle.</p>
-                <a href="#">Weiterlesen >></a>
-              </div>
-            </div>
-          </div>
-          <!-- single item  -->
-
-        </div>
-        <div class="text-center mt-4">
-          <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image"></a>
-        </div>
-      </div>
-    </section>
-    <!-- End RV Neuesten Nachrichten Area  -->
-
-    <!-- Start RV Beste Angebote Area  -->
-    <section class="rv-beste-angebote-area">
-      <div class="container">
-        <div class="primary-heading">
-          <h2>Beste Angebote</h2>
-          <div class="img-icon">
-            <img src="images/icons/rvicon.png" alt="Icon">
-          </div>
-        </div>
-
-        <div class="row">
-
-          <!-- single item -->
-          <div class="col-xl-4">
-
-            <div class="single-beste-angebote-content d-flex align-items-center">
-
-              <div class="single-beste-angebote-img">
-                <img src="images/images/bp1.png" alt="Image">
-              </div>
-              <div class="single-beste-angebote-right-text">
-                <span>Interphone</span>
-                <p>INTERPHONE PRO
-                  SOUND MIKROFON</p>
-                  <small>ab 21,80 € </small>
-              </div>
-
-            </div>
-
-          </div>
-          <!-- single item  -->
-
-        </div>
-
-        <div class="text-center mt-4">
-          <a class="rv-btn" href="#">Alle ansehen <img src="images/icons/ar.png" alt="Image"></a>
-        </div>
-
-      </div>
-    </section>
-    <!-- End RV Beste Angebote Area  -->
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-
-  <footer></footer>
-
-  <script src="./js/custom.js"></script>
-</body>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
 </html>

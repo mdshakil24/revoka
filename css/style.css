@@ -348,7 +348,7 @@ img.heart {
 }
 
 .rv-sonderangebot-area {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   padding: 130px 0;
 }
 
@@ -556,6 +556,19 @@ img.heart {
   border-radius: 10px;
   margin-top: -40px;
   position: relative;
+}
+
+.rv-beste-angebote-area {
+  background-color: #f3f3f3;
+  padding: 130px 0;
+}
+.rv-beste-angebote-area .primary-heading {
+  margin-bottom: 35px;
+}
+
+.single-beste-angebote-content {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

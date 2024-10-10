@@ -16,20 +16,46 @@ p {
   
 
 h1 {
-    font-weight: 500;
-    font-size: 78px;
+    font: {
+        weight: 500;
+        size: 78px;
+    }
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.026;
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 45px;
+    font: {
+        weight: 500;
+        size: 45px;
+    }
     color: $secondary-color;
     text-transform: capitalize;
     line-height: 1.1;
 }
+
+h3 {
+    font: {
+        weight: 500;
+        size: 34px;
+    }
+    color: $secondary-color;
+    text-transform: inherit;
+    line-height: 1.1;
+}
+
+h4 {
+    font: {
+        weight: 500;
+        size: 22px;
+    }
+    color: $secondary-color;
+    text-transform: inherit;
+    line-height: 1.35;
+}
+
+  
 
 .rv-btn {
     position: relative;
@@ -40,7 +66,7 @@ h2 {
     line-height: 1.2;
     background: $primary-linear-bg;
     padding: 15px 30px;
-    display: inline-block;
+    display: inline;
     z-index: 1;
 }
 
@@ -64,6 +90,7 @@ h2 {
 }
 
 .primary-heading {
+    text-align: center;
     h2 {
         margin-bottom: 10px;
     }
@@ -72,35 +99,52 @@ h2 {
     }
     .img-icon{
         position: relative;
-        ::before {
-            content: "";
-        }
-        ::after {
-            content: "";
-        }
+    }
+    .img-icon::before {
+        content: "";
+        position: absolute;
+        background: #000000;
+        width: 80px;
+        height: 1px;
+        left: -130px;
+        top: 15px;
+        right: 0;
+        margin: auto;
+    }
+    .img-icon::after {
+        content: "";
+        position: absolute;
+        background: #000000;
+        width: 80px;
+        height: 1px;
+        right: -125px;
+        top: 15px;
+        left: 0;
+        margin: auto;
     }
 }
+
 
 .secondary-heading {
     h2 {
         margin-bottom: 10px;
     }
+    .img-icon {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .img-icon::after {
+        content: "";
+        position: absolute;
+        background: #000000;
+        width: 80px;
+        height: 1px;
+        left: 35px;
+        top: 15px;
+    }
     .img-icon img {
         width: 20px;
     }
 
-}
-.img-icon {
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-.img-icon::after {
-    content: "";
-    position: absolute;
-    background: #000000;
-    width: 80px;
-    height: 1px;
-    left: 35px;
-    top: 15px;
 }

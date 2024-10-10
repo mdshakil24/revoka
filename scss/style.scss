@@ -27,7 +27,7 @@ body {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.66;
-    margin: 15px 0 25px;
+    margin: 15px 0 40px;
   }
 
 }
@@ -77,23 +77,27 @@ body {
     margin-bottom: 0;
   }
 
-  h3, {
-    font-size: 34px;
-    background: $primary-linear-bg;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1;
-    margin-bottom: 0;
+  h3
+  {
+  font-size: 34px;
+  background: $primary-linear-bg;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h4 {
+  font: {
+    weight: 500;
+    size: 23px
   }
 
-  h4 {
-    font: {
-      weight: 500;
-      size: 23px
-    }
-
-    color: $secondary-color;
-  }
+  color: $secondary-color;
+}
+.rv-besten-angebote-price a {
+  text-decoration: underline;
+}
 
 
 
@@ -119,29 +123,42 @@ body {
   background-color: #f5f5f5;
   padding: 130px 0;
 }
+
+.rv-besten-angebote-left {
+  p {
+    margin-bottom: 30px;
+  }
+
+}
+
 .rv-sonderangebot-left-slide-image {
   position: relative;
+
   img {
     width: 100%;
     height: auto;
   }
 }
+
 .rv-sonderangebot-left-slide-top-img {
   position: absolute;
   width: 100%;
   top: -40px;
+
   img {
     width: 32%;
   }
+
   h2 {
     font-size: 40px;
     color: #FFFFFF;
     margin-left: 50px;
   }
-} 
+}
 
 .rv-sonderangebot-right-slide {
   margin-left: 20px;
+
   h4 {
     font-size: 22px;
     font-weight: 500;
@@ -149,12 +166,19 @@ body {
     line-height: 1.1;
     margin-top: 30px;
   }
+
   p {
     font-size: 20px;
     width: 95%;
   }
 }
+
 .rv-sonderangebot-right-slide-price {
+  .right-slide-price {
+    margin-bottom: 45px;
+    margin-top: 15px;
+  }
+
   h3 {
     font-size: 34px;
     background: $primary-linear-bg;
@@ -163,15 +187,17 @@ body {
     line-height: 1;
     margin-bottom: 0;
   }
+
   span {
     position: relative;
     font-size: 20px;
     color: $secondary-color;
     line-height: 1.25;
     margin-left: 10px;
-   
+
   }
 }
+
 .rv-sonderangebot-right-slide-price span::after {
   content: "";
   position: absolute;
@@ -202,6 +228,7 @@ body {
   right: 0;
   margin: auto;
 }
+
 .rv-sonderangebot-right-slide-progress {
   margin-right: 35px;
 }
@@ -236,3 +263,109 @@ body {
 }
 
 // End RV Sonderangebot Area
+
+// Start RV Nolan Area
+.rv-nolan-area {
+  background: url('../images/images/nolan-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 105px 0;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.rv-nolan-middle-image {
+  img {
+    width: 360px;
+    position: absolute;
+    bottom: -56px;
+    right: -115px;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.rv-nolan-left-content {
+
+  h3,
+  h5,
+  p {
+    color: $white-color;
+  }
+
+  p,
+  h5 {
+    font-weight: 400;
+    font-size: 22px;
+    width: 92%;
+  }
+
+  .m-bottom {
+    margin-bottom: 35px;
+  }
+
+  .rv-nolan-left-heading-text {
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .rv-nolan-left-heading-text::after {
+    content: '';
+    position: absolute;
+    background-color: #728697;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+// End RV Nolan Area
+
+// Start Neuesten Nachrichten Area 
+
+.rv-neuesten-nachrichten-area {
+  background-color: $white-color;
+  padding: 130px 0;
+  .primary-heading {
+    margin-bottom: 35px;
+  }
+} 
+
+.single-neuesten-nachrichten-content {
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px15px;
+  }
+  p {
+    font-size: 18px;
+    color: $secondary-color;
+    line-height: 1.56;
+  }
+  a {
+    font: {
+      weight: 400;
+      size: 18px;
+    }
+    color: rgb(34, 152, 229);
+    border-bottom: 1px solid  rgb(34, 152, 229);
+  }
+
+  .single-neuesten-nachrichten-text-box {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px 22px;
+      border-radius: 10px;
+      margin-top: -40px;
+      position: relative;
+  }
+
+
+  
+}
+
+
+// End Neuesten Nachrichten Area 

@@ -1,14 +1,12 @@
 @import "variable/variables";
 @import "fonts";
-
 body {
   font-family: $font-gotham, sans-serif;
 }
-
 @import "global";
 @import "layouts/header";
 @import "layouts/footer";
-@import "responsive";
+
 
 
 
@@ -19,6 +17,7 @@ body {
   background-size: 100% 100%;
   padding-top: 195px;
   padding-bottom: 260px;
+  overflow: hidden;
   // height: 100vh;
 
   p {
@@ -43,10 +42,7 @@ body {
   overflow: hidden;
 }
 
-.rv-besten-angebote-right-slider {
-  margin-right: -120px;
-  margin-left: 30px;
-}
+
 
 .col-xl-8 {
   padding: 0;
@@ -109,7 +105,7 @@ body {
 
 }
 
-.rv-besten-angebote-slide.active {
+.rv-besten-angebote-slide.slideActive {
   background: $secondary-color;
 
   p,
@@ -128,9 +124,15 @@ body {
 .rv-sonderangebot-area {
   background-color: $secondary-bg;
   padding: 130px 0;
+  overflow: hidden;
 }
-
+.rv-besten-angebote-right-slider {
+  // margin-right: -120px;
+  // margin-left: 30px;
+  margin-left: 5%;
+}
 .rv-besten-angebote-left {
+  margin-left: 40%;
   p {
     margin-bottom: 20px;
   }
@@ -337,6 +339,7 @@ body {
 .rv-neuesten-nachrichten-area {
   background-color: $white-color;
   padding: 130px 0;
+  overflow: hidden;
 
   .primary-heading {
     margin-bottom: 35px;
@@ -385,7 +388,7 @@ body {
 .rv-beste-angebote-area {
   background-color: $secondary-bg;
   padding: 130px 0;
-
+  overflow: hidden;
   .primary-heading {
     margin-bottom: 35px;
   }
@@ -436,7 +439,7 @@ body {
 .rv-marken-area {
   background-color: $white-color;
   padding: 130px 0;
-
+  overflow: hidden;
   .primary-heading {
     margin-bottom: 40px;
   }
@@ -454,6 +457,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 130px 0 290px;
+  overflow: hidden;
 }
 
 .rv-newsletter-content {
@@ -510,3 +514,7 @@ body {
 }
 
 // End RV Newsletter Area
+
+
+// ==============>>> For mobile responsive <<<================== //
+@import "responsive";

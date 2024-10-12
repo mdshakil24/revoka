@@ -1,6 +1,7 @@
 .rv-header-area {
     position: relative;
     padding: 15px 0;
+    // overflow: hidden;
 }
 .rv-header-area::after {
     content: '';
@@ -13,6 +14,7 @@
     right: 0;
     top: 0;
     z-index: -1;
+    display: none;
 }
 
 .rv-nav-content {
@@ -84,7 +86,7 @@ img.heart {
 }
 .rv-nav ul li ul {
     position: absolute;
-    width: 280px;
+    width: 150%;
     padding-top: 30px;
     opacity: 0;
     transition: .3s;
@@ -94,4 +96,52 @@ img.heart {
     padding-top: 8px;
     opacity: 1;
     visibility: visible;
+}
+
+// mobile menu design
+
+.rv-mobile-merkliste a {
+    font: {
+        weight: 400;
+        size: 17px;
+    }
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    line-height: 1;
+    margin-left: 40px;
+    position: relative;
+}
+.rv-mobile-merkliste a::before {
+    content: "";
+    position: absolute;
+    background: #aaaaaa;
+    width: 1px;
+    height: 23px;
+    left: -20px;
+    top: -3px;
+}
+.rv-mobile-search img {
+    width: 28px;
+    height: auto;
+}
+.rv-mobile-merkliste img {
+    margin-left: 0;
+}
+
+.rv-mobile-icon {
+    background-color: #111111;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+        background-color: $white-color;
+        width: 25px;
+        height: 2px;
+        display: inline-block;
+        margin: 3px 0;
+    }
 }

@@ -3,60 +3,340 @@
     .rv-hero-banner-area {
         height: 100vh;
     }
+
     .rv-header-area ::after {
         width: 66%;
     }
 }
+
 @media (min-width: 2700px) {
     .rv-header-area ::after {
         width: 63%;
     }
 }
+
 @media (min-width: 3300px) {
     .rv-header-area ::after {
         width: 60%;
     }
 }
 
+// ===========================================================================
+// ===========================================================================
+// ===========================================================================
+
 // Media query use max width
+
+@media all and (max-width: 1400px) {
+    .rv-product-hero-area::after {
+        width: 25%;
+        height: 32%;
+    }
+
+    .rv-product-view-small-img button img {
+        width: 55px;
+    }
+}
+
 @media all and (max-width: 1199px) {
+    .rv-product-view-main-img img {
+        width: 50%;
+    }
+
+    .rv-product-view-small-img {
+        margin-top: 50px;
+    }
+
+    .rv-product-hero-area::after {
+        width: 25%;
+        height: 20%;
+    }
+
+    .rv-product-inhalt-button button {
+        font-size: 20px;
+        padding: 0 25px 20px;
+        margin-right: 25px;
+    }
+
+    .owl-carousel.rv-produkte-slider .owl-nav button.owl-prev {
+        left: -20px;
+    }
+
+    .owl-carousel.rv-produkte-slider .owl-nav button.owl-next {
+        right: -20px;
+    }
+
+    .single-rv-product-feedback {
+        margin-bottom: 20px;
+    }
+
+    .single-rv-product-progress span:first-child {
+        flex: 0 0 15%;
+    }
 
 }
 
 
 @media all and (max-width: 991px) {
-    
+
+    .rv-product-hero-area::after {
+        display: none;
+    }
+
+    .rv-product-hero-area {
+        background-size: 230% 100%;
+        background-position-x: 50%;
+    }
+
+    .rv-product-right-preise-content,
+    .rv-product-hero-content,
+    .rv-product-middle-text-content {
+        margin-top: 60px;
+    }
+
+    .rv-product-inhalt-button button {
+        font-size: 16px;
+        padding: 0 20px 10px;
+        margin-right: 5px;
+    }
+
+    .rv-product-inhalt-button button.active::after,
+    .rv-product-inhalt-button button:hover::after {
+        content: "";
+        height: 6px;
+    }
+
+    .single-rv-product-feedback-bottom-right {
+        margin-top: 20px;
+    }
+
+    .single-rv-product-feedback-bottom {
+        padding: 25px 0;
+    }
+
+    .single-rv-product-feedback-bottom {
+        flex-direction: column;
+    }
+
+    .single-rv-product-feedback-bottom-right p {
+        font-weight: 500;
+    }
+
+    .single-rv-product-feedback-bottom-right .d-flex.align-items-center p {
+        font-weight: 400;
+    }
+
+    .single-rv-product-feedback-bottom:last-child {
+        padding-bottom: 50px;
+    }
+
+    .rv-product-feedback-bottom-mobile {
+        display: flex;
+    }
+
+    .rv-product-feedback-bottom-mobile p:last-child {
+        margin-left: 30px;
+    }
+
 }
 
 
 @media all and (max-width: 767px) {
-    
+
+    .rv-product-hero-content {
+        margin-top: 50px;
+    }
+
+    .rv-product-inhalt-area,
+    .rv-produkte-area,
+    .rv-product-feedback-area {
+        padding: 90px 0;
+    }
+
+    .rv-product-inhalt-content .single-rv-product-inhalt-content:last-child {
+        margin-bottom: 0;
+    }
+
+    .rv-product-inhalt-content h3 {
+        font-size: 26px;
+    }
+
+    .rv-product-inhalt-content li {
+        font-size: 16px;
+    }
+
+    .rv-product-inhalt-button button {
+        padding: 15px 0;
+        margin-right: 30px;
+    }
+
+    .rv-product-inhalt-button::after {
+        content: "";
+        position: absolute;
+        background: #cccccc;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 54px;
+        z-index: -1;
+    }
+
 }
 
 
 @media all and (max-width: 575px) {
-    
+    .rv-product-step a {
+        font-size: 16px;
+        margin-right: 35px;
+    }
+
+    .rv-product-step a::after {
+        right: -17px;
+        top: 3px;
+    }
+
+    .rv-product-view-main-img img {
+        width: 60%;
+    }
+
+    .rv-product-text-content h5 {
+        font-size: 22px;
+    }
+
+    .rv-product-hero-content h6 {
+        font-size: 16px;
+    }
+
+    .rv-product-inhalt-heading {
+        padding: 25px 25px;
+        margin: 30px 0;
+    }
+
+    .rv-product-inhalt-content h3 {
+        font-size: 22px;
+    }
+
+    .rv-product-inhalt-area,
+    .rv-produkte-area,
+    .rv-product-feedback-area {
+        padding: 50px 0;
+    }
+
+    .owl-carousel.rv-produkte-slider .owl-nav button.owl-prev {
+        left: -11px;
+    }
+
+    .owl-carousel.rv-produkte-slider .owl-nav button.owl-next {
+        right: -11px;
+    }
+
+    .load-more-btn a {
+        font-size: 16px;
+    }
+
+    .single-rv-product-feedback-bottom:last-child {
+        padding-bottom: 30px;
+    }
+
+
 }
 
 
 @media all and (max-width: 450px) {
-    
+
+    p,
+    .rv-product-inhalt-content li {
+        font-size: 15px;
+    }
+
+    .rv-product-inhalt-heading {
+        padding: 20px 15px;
+    }
+
+    .rv-product-inhalt-button button {
+        margin-right: 16px;
+        font-size: 15px;
+    }
+
+    .rv-product-hero-area {
+        background-position-x: 40%;
+        padding-bottom: 70px;
+    }
+
+    .rv-product-view-main-img img {
+        width: 55%;
+    }
+
+    .rv-product-view-small-img button img {
+        width: 45px;
+    }
+
+    .rv-product-view-small-img {
+        margin-top: 30px;
+    }
+
+    .rv-product-view-small-img button {
+        padding: 10px 10px;
+    }
+
+    .rv-product-hero-content {
+        margin-top: 35px;
+    }
+
+    .single-product-right-preise-content p {
+        width: 80px;
+    }
+
+    .single-product-right-preise-middle h5 {
+        font-size: 15px;
+    }
+
+    .single-product-right-preise-right {
+        text-align: center;
+    }
+
+    .single-product-right-preise-content {
+        padding: 10px 8px;
+    }
+
+    .single-rv-product-feedback-bottom h6 {
+        font-size: 16px;
+    }
+
+    .rv-product-feedback-bottom-mobile p:last-child {
+        margin-left: 15px;
+    }
+    .single-rv-product-feedback-bottom-right p {
+        font-size: 15px;
+    }
+    .single-rv-product-feedback {
+        padding: 25px 10px;
+    }
+
+
+
 }
 
 
 
+// ===========================================================================
+// ===========================================================================
+// ===========================================================================
 
 // Media query use min width 
 @media (min-width: 320px) and (max-width:576px) {
     .rv-header-area::after {
         display: none;
     }
+
     .rv-header-area {
         overflow: hidden;
     }
+
     .mobile-menu-content {
         display: block;
     }
+
     .mobile-menu-content {
         width: 295px;
     }
@@ -64,171 +344,237 @@
     h1 {
         font-size: 38px;
     }
+
     h2 {
         font-size: 30px;
     }
-    h3,.rv-besten-angebote-slide h3 {
+
+    h3,
+    .rv-besten-angebote-slide h3 {
         font-size: 26px;
     }
-    .rv-besten-angebote-slide h4, h4 {
+
+    .rv-besten-angebote-slide h4,
+    h4 {
         font-size: 20px;
     }
+
     .single-neuesten-nachrichten-content p {
         width: 100%;
     }
+
     .single-beste-angebote-content img {
         width: 80px;
     }
+
     .rv-nolan-middle-image img {
         width: 175px;
         bottom: -56px;
         right: -30px;
     }
+
     .rv-footer-bottom-content .rv-footer-right-image img {
         width: 28px;
         margin-right: 5px;
     }
-    .rv-sonderangebot-right-slide p, p,.rv-nolan-left-content p, .rv-nolan-left-content h5,.single-neuesten-nachrichten-content p,.single-neuesten-nachrichten-content a,.rv-newsletter-content input,.rv-mobile-merkliste a  {
+
+    .rv-sonderangebot-right-slide p,
+    p,
+    .rv-nolan-left-content p,
+    .rv-nolan-left-content h5,
+    .single-neuesten-nachrichten-content p,
+    .single-neuesten-nachrichten-content a,
+    .rv-newsletter-content input,
+    .rv-mobile-merkliste a {
         font-size: 16px;
     }
-    .rv-footer-top-content > .row {
+
+    .rv-footer-top-content>.row {
         margin-top: 30px;
     }
+
     .rv-sonderangebot-right-slide p {
         width: 100%;
     }
+
     .rv-hero-banner-area p {
         font-size: 13px;
     }
+
     .rv-btn {
         font-size: 13px;
         padding: 15px 20px;
     }
+
     .rv-logo img {
         width: 120px;
     }
+
     .rv-mobile-merkliste a {
         margin-left: 15px;
     }
+
     .rv-mobile-merkliste a::before {
         left: -8px;
     }
+
     .rv-hero-banner-area {
         padding-top: 70px;
         padding-bottom: 120px;
     }
+
     .rv-besten-angebote-left {
         margin-left: 15px;
         margin-bottom: 30px;
     }
+
     .single-neuesten-nachrichten-text-box h4 {
         line-break: anywhere;
     }
+
     .rv-besten-angebote-area {
         padding-top: 40px;
         padding-bottom: 50px;
     }
-    .rv-sonderangebot-area,.rv-nolan-area,.rv-neuesten-nachrichten-area,.rv-beste-angebote-area,.rv-marken-area {
+
+    .rv-sonderangebot-area,
+    .rv-nolan-area,
+    .rv-neuesten-nachrichten-area,
+    .rv-beste-angebote-area,
+    .rv-marken-area {
         padding: 50px 0;
     }
+
     .rv-sonderangebot-right-slide-progress {
         display: none !important;
     }
+
     .rv-sonderangebot-left-slide-top-img h2 {
         font-size: 25px;
     }
+
     .rv-sonderangebot-left-slide-top-img {
         top: -20px;
     }
+
     .rv-sonderangebot-left-slide-image {
         position: relative;
         margin-bottom: 50px;
         margin-top: 35px;
     }
+
     .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev {
         left: -5px;
     }
+
     .owl-carousel.sonderangebot-slider .owl-nav button.owl-next {
         right: -5px;
     }
+
     .single-beste-angebote-content p {
         line-break: anywhere;
     }
+
     .rv-besten-angebote-right-slider {
         margin-left: 0;
     }
+
     .owl-carousel.rv-marken-slider .owl-nav button.owl-next {
         top: 30px;
         right: 0;
     }
+
     .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
         top: 30px;
         left: 0;
     }
+
     .rv-footer-bottom-content .rv-footer-logo img {
         width: 110px;
     }
+
     .rv-footer-bottom-content .rv-footer-right-content {
         padding-left: 0;
     }
+
     .mobile-flex-column {
         flex-direction: column;
     }
+
     .rv-newsletter-content .single-rv-newsletter-form {
         max-width: 285px;
     }
+
     .rv-newsletter-content::after {
         width: 65%;
         height: 85%;
         left: 50px;
     }
+
     .rv-footer-area {
         background-size: 150% 100%;
         background-position-x: 30%;
         padding-top: 88px;
     }
-    .rv-footer-top-content a, .rv-footer-top-content h6,.rv-copyright-text p,.rv-footer-bottom-content .rv-footer-right-content p,.rv-footer-right-text a,    .rv-footer-right-text p, .rv-footer-bottom-content .rv-footer-middle-text p{
+
+    .rv-footer-top-content a,
+    .rv-footer-top-content h6,
+    .rv-copyright-text p,
+    .rv-footer-bottom-content .rv-footer-right-content p,
+    .rv-footer-right-text a,
+    .rv-footer-right-text p,
+    .rv-footer-bottom-content .rv-footer-middle-text p {
         font-size: 13px;
     }
+
     .rv-footer-bottom-content {
         padding-top: 25px;
         padding-bottom: 20px;
     }
+
     .rv-logo img {
         width: 100px;
     }
+
     .rv-newsletter-content .single-rv-newsletter-form {
         max-width: 100%;
         margin-left: 0;
     }
+
     .rv-newsletter-area {
         padding: 70px 0 220px;
     }
+
     .owl-nav button {
         width: 30px;
         height: 30px;
     }
+
     .rv-mobile-icon {
         width: 30px;
         height: 30px;
         margin-left: 15px;
     }
+
     .rv-mobile-icon span {
         width: 20px;
         height: 2px;
     }
+
     .rv-besten-angebote-slide img {
         height: 155px !important;
     }
+
     .owl-carousel.besten-angebote-slider .owl-nav button.owl-prev {
         top: 155px;
         left: -8px;
     }
+
     .owl-carousel.besten-angebote-slider .owl-nav button.owl-next {
         bottom: 140px;
         left: -8px;
     }
-    
+
 
 }
 
@@ -238,37 +584,48 @@
     .rv-header-area::after {
         display: none;
     }
+
     .rv-header-area {
         overflow: hidden;
     }
+
     .mobile-menu-content {
         display: block;
     }
+
     h1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 40px;
     }
+
     h3 {
         font-size: 30px;
     }
+
     .rv-sonderangebot-right-slide p {
         font-size: 18px;
     }
+
     .rv-sonderangebot-single-progress-text span {
         font-size: 20px;
     }
+
     .circular-progress {
         --size: 160px;
     }
+
     .rv-sonderangebot-single-progress p {
         font-size: 16px;
     }
+
     .rv-sonderangebot-single-progress-text span {
         font-size: 20px;
         margin-left: -12px;
     }
+
     .rv-sonderangebot-right-slide-price h3 {
         font-size: 28px;
     }
@@ -276,87 +633,116 @@
     .rv-sonderangebot-single-progress {
         margin-left: 10px;
     }
+
     .rv-hero-banner-area p {
         font-size: 15px;
     }
+
     .rv-btn {
         font-size: 15px;
         padding: 17px 22px;
     }
+
     .rv-logo img {
         width: 160px;
     }
+
     .rv-header-area {
         padding: 20px 0;
     }
+
     .rv-besten-angebote-left {
         margin-left: 15px;
         margin-bottom: 40px;
     }
+
     .rv-footer-bottom-content .rv-footer-middle-text p a {
         font-size: 14px;
     }
+
     .rv-footer-bottom-content .rv-footer-right-content {
         padding-left: 0;
     }
+
     .rv-footer-area {
         background-size: 125% 100%;
         background-position-x: 30%;
     }
-    .rv-footer-top-content > .row  {
+
+    .rv-footer-top-content>.row {
         margin-top: 40px;
     }
-    .rv-sonderangebot-area,.rv-nolan-area,.rv-neuesten-nachrichten-area,.rv-beste-angebote-area,.rv-marken-area {
+
+    .rv-sonderangebot-area,
+    .rv-nolan-area,
+    .rv-neuesten-nachrichten-area,
+    .rv-beste-angebote-area,
+    .rv-marken-area {
         padding: 80px 0;
     }
+
     .rv-sonderangebot-left-slide-image {
         width: 100%;
         margin: 0 auto;
         margin-top: 80px;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev, .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
         left: -20px;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,.owl-carousel.rv-marken-slider .owl-nav button.owl-next {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-next {
         right: -20px;
     }
+
     .rv-nolan-middle-image img {
         width: 270px;
         bottom: -40px;
     }
-    .rv-nolan-left-content p, .rv-nolan-left-content h5 {
+
+    .rv-nolan-left-content p,
+    .rv-nolan-left-content h5 {
         font-weight: 400;
         font-size: 18px;
         width: 92%;
     }
+
     .rv-nolan-middle-image img {
         width: 230px;
-    }  
+    }
+
     .rv-hero-banner-area {
         padding-top: 70px;
         padding-bottom: 140px;
     }
+
     .rv-besten-angebote-area {
         padding-top: 50px;
         padding-bottom: 80px;
     }
+
     .rv-footer-bottom-content .rv-footer-logo img {
         width: 160px;
     }
+
     .rv-footer-area {
         background-size: 150% 100%;
         padding-top: 100px;
     }
+
     .rv-newsletter-content::after {
         width: 100%;
         height: 120%;
         left: 0;
     }
+
     .rv-besten-angebote-left {
         margin-left: 25px;
         margin-bottom: 35px;
     }
-                                   
+
 
 }
 
@@ -365,36 +751,46 @@
     .rv-header-area::after {
         display: none;
     }
+
     .rv-header-area {
         overflow: hidden;
     }
+
     .mobile-menu-content {
         display: block;
     }
+
     h1 {
         font-size: 55px;
     }
+
     h2 {
         font-size: 40px;
     }
+
     p {
         font-size: 15px;
     }
+
     .rv-besten-angebote-left {
         margin-left: 25px;
         margin-bottom: 40px;
     }
+
     .single-beste-angebote-content img {
         width: 100px;
         height: auto;
         margin-right: 35px;
     }
+
     .rv-logo img {
         width: 170px;
     }
+
     .rv-hero-banner-area p {
         font-size: 18px;
     }
+
     .rv-hero-banner-area {
         padding-top: 100px;
         padding-bottom: 180px;
@@ -403,13 +799,16 @@
     .single-neuesten-nachrichten-content p {
         width: 100%;
     }
+
     .single-neuesten-nachrichten-content .single-neuesten-nachrichten-text-box {
         min-height: 340px;
     }
+
     .single-beste-angebote-content {
         padding: 20px;
         margin: 0 0 30px;
     }
+
     .rv-footer-area {
         background-size: 145% 100%;
         background-position-x: 50%;
@@ -426,25 +825,33 @@
     .rv-header-area {
         overflow: hidden;
     }
+
     .mobile-menu-content {
         display: block;
     }
+
     h1 {
         font-size: 65px;
     }
-    .rv-nolan-left-content p, .rv-nolan-left-content h5 {
+
+    .rv-nolan-left-content p,
+    .rv-nolan-left-content h5 {
         font-size: 20px;
     }
+
     .rv-hero-banner-area {
         padding-top: 150px;
         padding-bottom: 220px;
     }
+
     .rv-hero-banner-area p {
         font-size: 22px;
     }
+
     .rv-logo img {
         width: 180px;
     }
+
     .rv-besten-angebote-area {
         padding-top: 50px;
         padding-bottom: 100px;
@@ -453,6 +860,7 @@
     .rv-newsletter-area {
         padding: 100px 0 260px;
     }
+
     .rv-sonderangebot-left-slide-image {
         width: 65%;
         margin: 0 auto;
@@ -463,12 +871,14 @@
     .single-neuesten-nachrichten-content p {
         width: 88%;
     }
+
     .rv-footer-top-content {
         .col-xl-3 {
-          padding-left: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
         }
-      }
-      .rv-besten-angebote-left {
+    }
+
+    .rv-besten-angebote-left {
         margin-left: 25px;
         margin-bottom: 30px;
     }
@@ -482,47 +892,64 @@
     .rv-logo img {
         width: 165px;
     }
+
     .rv-top-search {
         width: 200px;
     }
+
     nav.rv-nav {
         margin-top: 30px;
     }
-    .rv-nav-content a, .rv-nav-content input, .rv-nav-content input::placeholder {
+
+    .rv-nav-content a,
+    .rv-nav-content input,
+    .rv-nav-content input::placeholder {
         font-size: 17px;
         margin-left: 18px;
     }
+
     .rv-header-area::after {
         width: 78%;
     }
+
     .rv-besten-angebote-left {
         margin-left: 8%;
     }
+
     .rv-besten-angebote-right-slider {
         margin-left: 0;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev,.owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
         left: -35px;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,.owl-carousel.rv-marken-slider .owl-nav button.owl-next {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-next {
         right: -35px;
     }
+
     .rv-footer-area {
         padding-top: 165px;
     }
+
     .rv-footer-top-content .footer-right-item {
         margin-left: 20px;
     }
+
     .rv-footer-top-content .col-lg-3 {
         padding-left: 60px;
     }
+
     .rv-header-area::after {
         display: block;
-     }
-     .rv-sonderangebot-left-slide-image {
+    }
+
+    .rv-sonderangebot-left-slide-image {
         width: 100%;
     }
-   
+
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -531,20 +958,26 @@
         margin-left: 8%;
         width: 80%;
     }
+
     .rv-besten-angebote-right-slider {
         margin-left: -5%;
     }
+
     .rv-footer-area {
         padding-top: 160px;
     }
+
     .rv-header-area::after {
         width: 75%;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev,.owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
         left: -44px;
     }
-    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,.owl-carousel.rv-marken-slider .owl-nav button.owl-next {
+
+    .owl-carousel.sonderangebot-slider .owl-nav button.owl-next,
+    .owl-carousel.rv-marken-slider .owl-nav button.owl-next {
         right: -44px;
     }
 }
-

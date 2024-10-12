@@ -18,6 +18,27 @@ function mobileMenuHide() {
     document.body.classList.style.overflow = 'visible';
 }
 
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
 
 
 // All slider js
@@ -74,7 +95,6 @@ $(document).ready(function () {
     })
 
     $('.rv-marken-slider').owlCarousel({
-        items: 6,
         loop: true,
         nav: true,
         autoplay: true,
@@ -97,6 +117,31 @@ $(document).ready(function () {
             }
         }
 
+    })
+
+    $('.rv-produkte-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        autoplay: true,
+        dots: false,
+        margin: 40,
+        responsive: {
+            320: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        }
     })
 
 

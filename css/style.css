@@ -208,7 +208,9 @@ a.rv-btn img {
   color: #FFFFFF;
 }
 
-.owl-carousel.besten-angebote-slider .owl-nav button, .owl-carousel.sonderangebot-slider .owl-nav button, .owl-carousel.rv-marken-slider .owl-nav button {
+.owl-carousel.besten-angebote-slider .owl-nav button,
+.owl-carousel.sonderangebot-slider .owl-nav button,
+.owl-carousel.rv-marken-slider .owl-nav button {
   position: absolute;
 }
 
@@ -269,6 +271,30 @@ a.rv-btn img {
   border: 1px solid #FFFFFF;
 }
 
+.rv-product-step a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  margin-right: 40px;
+  position: relative;
+}
+.rv-product-step a::after {
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 1px;
+  height: 20px;
+  right: -20px;
+  top: 5px;
+  transform: rotate(25deg);
+}
+.rv-product-step a:hover, .rv-product-step a:last-child {
+  color: #2298e5;
+}
+.rv-product-step a:last-child::after {
+  display: none;
+}
+
 .rv-header-area {
   position: relative;
   padding: 15px 0;
@@ -285,7 +311,6 @@ a.rv-btn img {
   right: 0;
   top: 0;
   z-index: -1;
-  display: none;
 }
 
 .rv-nav-content {
@@ -1015,6 +1040,110 @@ img.heart {
   z-index: -1;
 }
 
+.rv-product-hero-area {
+  background: url("../images/product/product-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.rv-product-hero-content {
+  margin-top: 80px;
+}
+
+.rv-product-view-main-img img {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.rv-product-view-small-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.rv-product-view-small-img button {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 13px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  margin: 0 7px;
+}
+.rv-product-view-small-img button img {
+  width: 60px;
+  height: auto;
+}
+.rv-product-view-small-img button:hover {
+  border: 1px solid #2599e5;
+}
+
+.rv-product-text-heading h4 {
+  font-size: 30px;
+}
+.rv-product-text-heading p {
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.rv-product-hero-content h6 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.rv-product-text-content {
+  position: relative;
+  padding-top: 30px;
+}
+.rv-product-text-content h5 {
+  font-size: 28px;
+  background: linear-gradient(to right, rgb(1, 29, 176) 0%, rgb(34, 152, 229) 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.rv-product-text-content h6 span {
+  color: #2198e5;
+  display: inline-block;
+}
+.rv-product-text-content p {
+  text-align: justify;
+}
+
+.rv-product-text-content::after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  width: 100%;
+  height: 1px;
+  top: 15px;
+  left: 0;
+}
+
+.rv-product-right-content .rv-product-view-small-img {
+  justify-content: flex-start;
+  margin: 25px 0;
+}
+.rv-product-right-content .rv-product-view-small-img button:first-child {
+  margin-left: 0;
+}
+
+.rv-product-hero-content .rv-btn {
+  padding: 12px 20px;
+}
+.rv-product-hero-content .rv-btn::after {
+  display: none;
+}
+
 @media (min-width: 1925px) {
   .rv-hero-banner-area {
     height: 100vh;
@@ -1034,6 +1163,9 @@ img.heart {
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
+  .rv-header-area::after {
+    display: none;
+  }
   .rv-header-area {
     overflow: hidden;
   }
@@ -1212,6 +1344,9 @@ img.heart {
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+  .rv-header-area::after {
+    display: none;
+  }
   .rv-header-area {
     overflow: hidden;
   }
@@ -1331,6 +1466,9 @@ img.heart {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+  .rv-header-area::after {
+    display: none;
+  }
   .rv-header-area {
     overflow: hidden;
   }
@@ -1381,6 +1519,9 @@ img.heart {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+  .rv-header-area::after {
+    display: none;
+  }
   .rv-header-area {
     overflow: hidden;
   }

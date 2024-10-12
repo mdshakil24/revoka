@@ -15,13 +15,14 @@ p {
     text-transform: inherit;
     line-height: 1.6;
 }
-  
+
 
 h1 {
     font: {
         weight: 500;
         size: 78px;
     }
+
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.026;
@@ -32,6 +33,7 @@ h2 {
         weight: 500;
         size: 45px;
     }
+
     color: $secondary-color;
     text-transform: capitalize;
     line-height: 1.1;
@@ -42,6 +44,7 @@ h3 {
         weight: 500;
         size: 34px;
     }
+
     color: $secondary-color;
     text-transform: inherit;
     line-height: 1.1;
@@ -52,12 +55,13 @@ h4 {
         weight: 500;
         size: 22px;
     }
+
     color: $secondary-color;
     text-transform: inherit;
     line-height: 1.35;
 }
 
-  
+
 
 .rv-btn {
     position: relative;
@@ -103,15 +107,19 @@ a.rv-btn img {
 
 .primary-heading {
     text-align: center;
+
     h2 {
         margin-bottom: 10px;
     }
+
     .img-icon img {
         width: 25px;
     }
-    .img-icon{
+
+    .img-icon {
         position: relative;
     }
+
     .img-icon::before {
         content: "";
         position: absolute;
@@ -123,6 +131,7 @@ a.rv-btn img {
         right: 0;
         margin: auto;
     }
+
     .img-icon::after {
         content: "";
         position: absolute;
@@ -141,11 +150,13 @@ a.rv-btn img {
     h2 {
         margin-bottom: 10px;
     }
+
     .img-icon {
         position: relative;
         margin-top: 15px;
         margin-bottom: 20px;
     }
+
     .img-icon::after {
         content: "";
         position: absolute;
@@ -155,6 +166,7 @@ a.rv-btn img {
         left: 35px;
         top: 15px;
     }
+
     .img-icon img {
         width: 20px;
     }
@@ -171,18 +183,24 @@ a.rv-btn img {
     border-radius: 50% !important;
     transition: .3s;
 }
-.owl-nav button:hover  {
+
+.owl-nav button:hover {
     background-color: #1056c8 !important;
 }
+
 .owl-nav button span {
     font-size: 30px;
     line-height: 22px;
     color: #011db0;
 }
+
 .owl-nav button:hover span {
     color: #FFFFFF;
 }
-.owl-carousel.besten-angebote-slider .owl-nav button, .owl-carousel.sonderangebot-slider .owl-nav button,.owl-carousel.rv-marken-slider .owl-nav button {
+
+.owl-carousel.besten-angebote-slider .owl-nav button,
+.owl-carousel.sonderangebot-slider .owl-nav button,
+.owl-carousel.rv-marken-slider .owl-nav button {
     position: absolute;
 }
 
@@ -190,10 +208,12 @@ a.rv-btn img {
 .owl-carousel.besten-angebote-slider .owl-stage-outer {
     padding: 0;
 }
+
 .owl-carousel.besten-angebote-slider .owl-nav button.owl-next {
     bottom: 155px;
     left: -18px;
 }
+
 .owl-carousel.besten-angebote-slider .owl-nav button.owl-prev {
     top: 155px;
     left: -18px;
@@ -205,6 +225,7 @@ a.rv-btn img {
     transform: translateY(-50%);
     right: -80px;
 }
+
 .owl-carousel.sonderangebot-slider .owl-nav button.owl-prev {
     top: 50%;
     transform: translateY(-50%);
@@ -216,16 +237,18 @@ a.rv-btn img {
     top: 0;
     right: -80px;
 }
+
 .owl-carousel.rv-marken-slider .owl-nav button.owl-prev {
     top: 0;
     left: -80px;
 }
- 
+
 // nolan slider
 .owl-theme.nolan-slider .owl-nav.disabled+.owl-dots {
     margin-top: 15px;
     text-align: left;
 }
+
 .owl-theme.nolan-slider .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
@@ -233,10 +256,41 @@ a.rv-btn img {
     background: transparent !important;
     border: 1px solid #FFFFFF;
 }
+
 .owl-theme.nolan-slider .owl-dots .owl-dot.active span {
     width: 8px;
     height: 8px;
     margin: 5px 4px;
     background: #FFFFFF !important;
     border: 1px solid #FFFFFF;
+}
+
+.rv-product-step {
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        background: #000000;
+        width: 1px;
+        height: 20px;
+        right: -20px;
+        top: 5px;
+        transform: rotate(25deg);
+    }
+
+    a:hover, a:last-child {
+        color: #2298e5;
+    }
+
+
+    a:last-child::after {
+        display: none;
+    }
 }

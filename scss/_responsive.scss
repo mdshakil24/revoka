@@ -48,6 +48,9 @@
 
 // Media query use min width 
 @media (min-width: 320px) and (max-width:576px) {
+    .rv-header-area::after {
+        display: none;
+    }
     .rv-header-area {
         overflow: hidden;
     }
@@ -232,6 +235,9 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 768px) {
+    .rv-header-area::after {
+        display: none;
+    }
     .rv-header-area {
         overflow: hidden;
     }
@@ -356,6 +362,9 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 992px) {
+    .rv-header-area::after {
+        display: none;
+    }
     .rv-header-area {
         overflow: hidden;
     }
@@ -410,6 +419,10 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1200px) {
+    .rv-header-area::after {
+        display: none;
+    }
+
     .rv-header-area {
         overflow: hidden;
     }

@@ -1,5 +1,63 @@
+// Large monitor
+@media (min-width: 1925px) {
+    .rv-hero-banner-area {
+        height: 100vh;
+    }
+    .rv-header-area ::after {
+        width: 66%;
+    }
+}
+@media (min-width: 2700px) {
+    .rv-header-area ::after {
+        width: 63%;
+    }
+}
+@media (min-width: 3300px) {
+    .rv-header-area ::after {
+        width: 60%;
+    }
+}
 
+// Media query use max width
+@media all and (max-width: 1199px) {
+
+}
+
+
+@media all and (max-width: 991px) {
+    
+}
+
+
+@media all and (max-width: 767px) {
+    
+}
+
+
+@media all and (max-width: 575px) {
+    
+}
+
+
+@media all and (max-width: 450px) {
+    
+}
+
+
+
+
+// Media query use min width 
 @media (min-width: 320px) and (max-width:576px) {
+    .rv-header-area {
+        overflow: hidden;
+    }
+    .mobile-menu-content {
+        display: block;
+    }
+    .mobile-menu-content {
+        width: 295px;
+    }
+
     h1 {
         font-size: 38px;
     }
@@ -58,6 +116,7 @@
     }
     .rv-besten-angebote-left {
         margin-left: 15px;
+        margin-bottom: 30px;
     }
     .single-neuesten-nachrichten-text-box h4 {
         line-break: anywhere;
@@ -166,12 +225,19 @@
         bottom: 140px;
         left: -8px;
     }
+    
 
 }
 
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 768px) {
+    .rv-header-area {
+        overflow: hidden;
+    }
+    .mobile-menu-content {
+        display: block;
+    }
     h1 {
         font-size: 50px;
     }
@@ -290,6 +356,12 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 992px) {
+    .rv-header-area {
+        overflow: hidden;
+    }
+    .mobile-menu-content {
+        display: block;
+    }
     h1 {
         font-size: 55px;
     }
@@ -298,6 +370,10 @@
     }
     p {
         font-size: 15px;
+    }
+    .rv-besten-angebote-left {
+        margin-left: 25px;
+        margin-bottom: 40px;
     }
     .single-beste-angebote-content img {
         width: 100px;
@@ -334,6 +410,12 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1200px) {
+    .rv-header-area {
+        overflow: hidden;
+    }
+    .mobile-menu-content {
+        display: block;
+    }
     h1 {
         font-size: 65px;
     }
@@ -377,6 +459,7 @@
         margin-left: 25px;
         margin-bottom: 30px;
     }
+
 
 
 }
@@ -452,22 +535,3 @@
     }
 }
 
-// Large monitor
-@media (min-width: 1925px) {
-    .rv-hero-banner-area {
-        height: 100vh;
-    }
-    .rv-header-area ::after {
-        width: 66%;
-    }
-}
-@media (min-width: 2700px) {
-    .rv-header-area ::after {
-        width: 63%;
-    }
-}
-@media (min-width: 3300px) {
-    .rv-header-area ::after {
-        width: 60%;
-    }
-}

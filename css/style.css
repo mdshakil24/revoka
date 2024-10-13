@@ -1902,8 +1902,34 @@ img.heart {
   top: 10px;
 }
 
+.category-hero-area {
+  background: url("../images/category/banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 130px 0 190px;
+}
+
+.category-hero-content h3 {
+  font-size: 38px;
+}
+
+.category-hero-content h3, .category-hero-content a {
+  color: rgb(255, 255, 255);
+}
+
+.category-hero-content .rv-product-step a::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 1px;
+  height: 20px;
+  right: -20px;
+  top: 5px;
+  transform: rotate(25deg);
+}
+
 @media (min-width: 1925px) {
-  .rv-hero-banner-area {
+  .rv-hero-banner-area, .category-hero-area {
     height: 100vh;
   }
   .rv-header-area ::after {
@@ -2120,6 +2146,9 @@ img.heart {
     margin: 0 auto;
     margin-top: 80px;
   }
+  .category-hero-area {
+    padding: 80px 0 140px;
+  }
 }
 @media all and (max-width: 767px) {
   .rv-product-hero-content {
@@ -2192,6 +2221,15 @@ img.heart {
   }
   .rv-produkt-vergleich-content {
     padding-top: 35px;
+  }
+  .category-hero-content h3 {
+    font-size: 32px;
+  }
+  .category-hero-area {
+    padding: 70px 0 110px;
+  }
+  .category-hero-content h3 {
+    font-size: 28px;
   }
 }
 @media all and (max-width: 575px) {
@@ -2369,6 +2407,12 @@ img.heart {
   }
   .rv-produkt-vergleich-single-top-right h6 {
     margin-right: 18px;
+  }
+  .category-hero-content h3 {
+    font-size: 25px;
+  }
+  .category-hero-area {
+    padding: 50px 0 80px;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {

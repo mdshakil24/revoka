@@ -1,6 +1,6 @@
 // Large monitor
 @media (min-width: 1925px) {
-    .rv-hero-banner-area {
+    .rv-hero-banner-area,.category-hero-area {
         height: 100vh;
     }
 
@@ -284,6 +284,9 @@
         margin: 0 auto;
         margin-top: 80px;
     }
+    .category-hero-area {
+        padding: 80px 0 140px;
+    }
 
 }
 
@@ -377,6 +380,16 @@
 
     .rv-produkt-vergleich-content {
         padding-top: 35px;
+    }
+
+    .category-hero-content h3 {
+        font-size: 32px;
+    }
+    .category-hero-area {
+        padding: 70px 0 110px;
+    }
+    .category-hero-content h3 {
+        font-size: 28px;
     }
 
 }
@@ -607,6 +620,14 @@
 
     .rv-produkt-vergleich-single-top-right h6 {
         margin-right: 18px;
+    }
+
+    .category-hero-content h3 {
+        font-size: 25px;
+    }
+
+    .category-hero-area {
+        padding: 50px 0 80px;
     }
 
 

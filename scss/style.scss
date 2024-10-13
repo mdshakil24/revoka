@@ -1069,7 +1069,7 @@ body {
   overflow: hidden;
 }
 
-.rv-produktbiId-right-content.mobile-view  {
+.rv-produktbiId-right-content.mobile-view {
   display: none;
 }
 
@@ -1372,11 +1372,6 @@ body {
 
 
 
-
-
-
-
-
 .rv-produkt-vergleich-single-top-content {
   background: #FFFFFF;
   box-shadow: 0 0 40px rgba(0, 0, 0, .2);
@@ -1389,8 +1384,10 @@ body {
   right: 60px;
   top: 25px;
 }
+
 .rv-produkt-vergleich-single-top-head {
   padding: 50px 60px 20px;
+
   h4 {}
 
   img {
@@ -1575,12 +1572,36 @@ body {
 // ================================================================================================ //
 
 
+// ================================================================================================ //
+// ===============================  CATEGORY PAGE CSS START   ===================================== // 
+// ================================================================================================ //
 
+.category-hero-area {
+  background: url('../images/category/banner.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 130px 0 190px;
+}
+.category-hero-content h3 {
+  font-size: 38px;
+}
+.category-hero-content h3,.category-hero-content a {
+  color: $white-color;
+}
+.category-hero-content .rv-product-step a::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 1px;
+  height: 20px;
+  right: -20px;
+  top: 5px;
+  transform: rotate(25deg);
+}
 
-
-
-
-
+// ================================================================================================ //
+// ================================  CATEGORY PAGE CSS END  ======================================= // 
+// ================================================================================================ //
 
 
 

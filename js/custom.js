@@ -1,21 +1,21 @@
 // Mobile menu js
-const header = document.getElementById('rv-header')
+// const header = document.getElementById('rv-header')
 const mobileContent = document.getElementById('mobile-content');
 const mobileIcon = document.getElementById('mobile-icon');
 const mobileClose = document.getElementById('close-icon');
 mobileIcon.addEventListener('click',mobileMenuShow);
 mobileClose.addEventListener('click',mobileMenuHide);
 function mobileMenuShow() {
-    header.style.overflow = 'visible';
+    // header.style.overflow = 'visible';
     mobileContent.style.transform = 'translate(0)';
     document.body.classList.add('dark-background');
-    document.body.classList.style.overflow = 'hidden';
+    // document.body.classList.style.overflow = 'hidden';
 }
 function mobileMenuHide() {
-    setTimeout(() => {header.style.overflow = 'hidden';},300)
+    // setTimeout(() => {header.style.overflow = 'hidden';},300)
     mobileContent.style.transform = 'translate(100%)';
     document.body.classList.remove('dark-background');
-    document.body.classList.style.overflow = 'visible';
+    // document.body.classList.style.overflow = 'visible';
 }
 
 function openCity(evt, cityName) {

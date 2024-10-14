@@ -1,6 +1,6 @@
 // Large monitor
 @media (min-width: 1925px) {
-    .rv-hero-banner-area,.category-hero-area {
+    .rv-hero-banner-area,.rv-category-hero-area {
         height: 100vh;
     }
 
@@ -27,7 +27,7 @@
 
 // Media query use max width
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
     .owl-carousel.rv-produkte-slider .owl-nav button.owl-prev {
         left: -43px;
     }
@@ -43,6 +43,12 @@
 
     .rv-product-view-small-img button img {
         width: 55px;
+    }
+    .rv-category-main-left-content {
+        width: 95%;
+    }
+    .rv-category-main-content .rv-category-main-left-top-btn button {
+        padding: 8px 25px;
     }
 }
 
@@ -128,6 +134,11 @@
     .rv-produktbiId-content.d-flex.flex-wrap,
     .rv-produktbiId-right-content {
         flex-wrap: nowrap !important;
+    }
+
+    .rv-category-main-left-content {
+        width: 95%;
+        display: none;
     }
 
 }
@@ -284,8 +295,19 @@
         margin: 0 auto;
         margin-top: 80px;
     }
-    .category-hero-area {
+    .rv-category-hero-area {
         padding: 80px 0 140px;
+    }
+
+    .single-rv-category-main-right-text .single-rv-produkte-slide h6 {
+        font-size: 21px;
+    }
+
+    .single-rv-category-main-right-text .single-rv-produkte-slide h5 {
+        font-size: 19px;
+    }
+    .rv-category-main-area {
+        padding: 100px 0;
     }
 
 }
@@ -299,7 +321,7 @@
 
     .rv-product-inhalt-area,
     .rv-produkte-area,
-    .rv-product-feedback-area {
+    .rv-product-feedback-area,.rv-category-main-area {
         padding: 90px 0;
     }
 
@@ -385,11 +407,17 @@
     .category-hero-content h3 {
         font-size: 32px;
     }
-    .category-hero-area {
+    .rv-category-hero-area {
         padding: 70px 0 110px;
     }
     .category-hero-content h3 {
         font-size: 28px;
+    }
+    .rv-category-main-content .form-select {
+        width: 170px;
+    }
+    .rv-category-main-right-content .single-rv-category-main-right-top-select p {
+        font-size: 16px;
     }
 
 }
@@ -433,7 +461,7 @@
 
     .rv-product-inhalt-area,
     .rv-produkte-area,
-    .rv-product-feedback-area {
+    .rv-product-feedback-area,.rv-category-main-area {
         padding: 50px 0;
     }
 
@@ -492,6 +520,12 @@
 
     .rv-produkt-vergleich-single-top-left.d-flex.align-items-center h4 {
         left: 130px;
+    }
+    .rv-category-main-right-top-select.d-flex.justify-content-between {
+        flex-direction: column;
+    }
+    .rv-category-main-content .form-select {
+        width: auto;
     }
 
 }
@@ -626,7 +660,7 @@
         font-size: 25px;
     }
 
-    .category-hero-area {
+    .rv-category-hero-area {
         padding: 50px 0 80px;
     }
 
@@ -645,17 +679,25 @@
         display: none;
     }
 
-    .rv-header-area {
-        overflow: hidden;
-    }
+    // .mobile-menu-content {
+    //     display: block;
+    // }
 
     .mobile-menu-content {
-        display: block;
+        width: 310px;
+    }
+    .mobile-menu-slide-text {
+        width: 140px !important;
+        height: 120px !important;
+    }
+    .mobile-menu-slide-text h6 {
+
+        font-size: 12px;
+    }
+    .mobile-menu-bottom,.mobile-menu-content .accordion-item button, .mobile-menu-content .accordion-item a {
+        padding: 10px 15px;
     }
 
-    .mobile-menu-content {
-        width: 295px;
-    }
 
     h1 {
         font-size: 38px;
@@ -901,13 +943,11 @@
         display: none;
     }
 
-    .rv-header-area {
-        overflow: hidden;
-    }
 
-    .mobile-menu-content {
-        display: block;
-    }
+
+    // .mobile-menu-content {
+    //     display: block;
+    // }
 
     h1 {
         font-size: 50px;
@@ -1068,13 +1108,10 @@
         display: none;
     }
 
-    .rv-header-area {
-        overflow: hidden;
-    }
 
-    .mobile-menu-content {
-        display: block;
-    }
+    // .mobile-menu-content {
+    //     display: block;
+    // }
 
     h1 {
         font-size: 55px;
@@ -1138,13 +1175,11 @@
         display: none;
     }
 
-    .rv-header-area {
-        overflow: hidden;
-    }
 
-    .mobile-menu-content {
-        display: block;
-    }
+
+    // .mobile-menu-content {
+    //     display: block;
+    // }
 
     h1 {
         font-size: 65px;

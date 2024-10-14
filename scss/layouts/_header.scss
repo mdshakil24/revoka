@@ -15,7 +15,6 @@
     right: 0;
     top: 0;
     z-index: -1;
-    // display: none;
 }
 
 .rv-nav-content {
@@ -165,7 +164,7 @@ img.heart {
     top: 0;
     z-index: 99;
     transform: translateX(100%);
-    display: none;
+    // display: none;
     transition: .3s;
 }
 .mobile-close-button button {
@@ -260,7 +259,7 @@ img.heart {
 .dark-background::after {
     content: '';
     position: fixed;
-    background: rgba(0, 0, 0,.4);
+    background: rgba(0, 0, 0,.8);
     width: 100%;
     height: 100%;
     top: 0;

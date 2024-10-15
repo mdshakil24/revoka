@@ -4,19 +4,7 @@
     box-shadow: 0 0 50px rgba(0,0,0,.05);
 }
 
-.rv-header-area::after {
-    content: '';
-    position: absolute;
-    background: url('../../images/images/top-bar.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 69%;
-    height: 45px;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
+ 
 .rv-nav-content {
     margin-top: -15px;
 }
@@ -27,7 +15,7 @@
 }
 
 .rv-nav-content {
-
+    
     a,
     input,
     input::placeholder {
@@ -49,6 +37,35 @@
         width: 100%;
         border: none;
         margin-top: -3px;
+    }
+
+    .rv-nav-parent{
+        position: relative;
+        padding: 10px 0px;
+        &::before{ 
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #efefef;
+            position: absolute;
+            inset: 0;
+            border-bottom-left-radius: 50px;
+        }
+        &::after{ 
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #efefef;
+            position: absolute;
+            left: 100%; 
+            top: 0
+        }
+    }
+    .rv-top-bar-left{
+        position: relative;
+    }
+    .rv-top-bar-right{
+        position: relative;
     }
 }
 
@@ -87,12 +104,29 @@ img.heart {
 }
 
 .rv-nav ul li ul {
-    position: absolute;
-    width: 150%;
-    padding-top: 30px;
-    opacity: 0;
-    transition: .3s;
-    visibility: hidden;
+	position: absolute;
+	width: 150%;
+	padding-top: 30px;
+	opacity: 0;
+	transition: 0.3s;
+	visibility: hidden;
+	background: white;
+	border-radius: 4px;
+	z-index: 99;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.10);
+
+    @media (min-width: 1200px ) {   
+        padding: 12px 0; 
+    }
+
+    li{
+        a{
+            @media (min-width: 1200px ) {   
+                padding: 6px 0;
+                display: inline-block;
+            }
+        }
+    }
 }
 
 .rv-nav ul li:hover ul {
@@ -159,13 +193,16 @@ img.heart {
     background: #FFFFFF;
     width: 400px;
     padding: 40px 0;
-    position: absolute;
+    position: fixed;
+    height: 100%;
+    max-height: 100dvh;
+    overflow-y: auto;
     right: 0;
     top: 0;
     z-index: 99;
     transform: translateX(100%);
-    // display: none;
     transition: .3s;
+    z-index: 9999;
 }
 .mobile-close-button button {
     background: transparent;
@@ -252,17 +289,4 @@ img.heart {
     width: 30px;
     height: 30px;
     margin: 0 5px;
-}
-.dark-background {
-    position: relative;
-}
-.dark-background::after {
-    content: '';
-    position: fixed;
-    background: rgba(0, 0, 0,.8);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }

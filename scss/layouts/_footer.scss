@@ -1,9 +1,15 @@
 .rv-footer-area {
-  background: url("../../images/images/footer-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   padding-top: 130px;
   margin-top: -160px;
+  position: relative;
+  .footer-banner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      object-position: top;
+  }
 }
 
 .rv-footer-top-content {
